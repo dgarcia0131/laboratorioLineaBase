@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Archivo generado automáticamente solo para documentación -->
+<!-- No requiere la dependencia de PrettyFaces -->
+<!-- Para rutas dinámicas (basadas en bundles o beans), completar manualmente -->
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+  http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces-3.3.3.xsd">
+
+  <!-- Posible ruta dinámica detectada en advertencia.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="acuerdoFirmaElectronica-advertencia">
+    <pattern value="//acuerdoFirmaElectronica/advertencia/#{labels['pagina.acuerdofirma.alerta2']}" />
+    <view-id value="/site/acuerdoFirmaElectronica/advertencia.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en bloqueo.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="acuerdoFirmaElectronica-bloqueo">
+    <pattern value="//acuerdoFirmaElectronica/bloqueo/#{ !acuerdoFirmaElectronicaBean.tercvali }" />
+    <view-id value="/site/acuerdoFirmaElectronica/bloqueo.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en codigoSeguridad.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="acuerdoFirmaElectronica-codigoSeguridad">
+    <pattern value="//acuerdoFirmaElectronica/codigoSeguridad/#{titles['pagina.acuerdofirma.paso3']}" />
+    <view-id value="/site/acuerdoFirmaElectronica/codigoSeguridad.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en descargaArchivo.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="acuerdoFirmaElectronica-descargaArchivo">
+    <pattern value="//acuerdoFirmaElectronica/descargaArchivo/#{titles['pagina.acuerdofirma.paso4']}" />
+    <view-id value="/site/acuerdoFirmaElectronica/descargaArchivo.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en informacionTercero.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="acuerdoFirmaElectronica-informacionTercero">
+    <pattern value="//acuerdoFirmaElectronica/informacionTercero/#{titles['pagina.acuerdofirma.paso2']}" />
+    <view-id value="/site/acuerdoFirmaElectronica/informacionTercero.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalError.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="acuerdoFirmaElectronica-modalError">
+    <pattern value="//acuerdoFirmaElectronica/modalError/#{acuerdoFirmaElectronicaBean.texterro}" />
+    <view-id value="/site/acuerdoFirmaElectronica/modalError.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en terminosCondiciones.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="acuerdoFirmaElectronica-terminosCondiciones">
+    <pattern value="//acuerdoFirmaElectronica/terminosCondiciones/#{titles['pagina.acuerdofirma.paso1']}" />
+    <view-id value="/site/acuerdoFirmaElectronica/terminosCondiciones.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en acuerdoFirmaElectronica.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="acuerdoFirmaElectronica">
+    <pattern value="//acuerdoFirmaElectronica/#{appConfigMB.plantilla}" />
+    <view-id value="/site/acuerdoFirmaElectronica.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en acuerdoPago.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="acuerdoPago">
+    <pattern value="//acuerdoPago/#{appConfigMB.plantilla}" />
+    <view-id value="/site/acuerdoPago.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en cambioClaveValorizacion.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="cambioClaveValorizacion">
+    <pattern value="//cambioClaveValorizacion/#{appConfigMB.plantilla}" />
+    <view-id value="/site/cambioClaveValorizacion.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalAnexosFodecamp.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="censoValorizacion-modalAnexosFodecamp">
+    <pattern value="//censoValorizacion/modalAnexosFodecamp/#{censoValorizacionBean.fodecampSeleccionado.focaanex}" />
+    <view-id value="/site/censoValorizacion/modalAnexosFodecamp.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalAnexosFodecampPredio.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="censoValorizacion-modalAnexosFodecampPredio">
+    <pattern value="//censoValorizacion/modalAnexosFodecampPredio/#{censoValorizacionPrediosBean.fodecampSeleccionado.focaanex}" />
+    <view-id value="/site/censoValorizacion/modalAnexosFodecampPredio.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalFocaobse.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="censoValorizacion-modalFocaobse">
+    <pattern value="//censoValorizacion/modalFocaobse/#{censoValorizacionBean.fodecampSeleccionado.focaetiq}" />
+    <view-id value="/site/censoValorizacion/modalFocaobse.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalFocaobsePredio.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="censoValorizacion-modalFocaobsePredio">
+    <pattern value="//censoValorizacion/modalFocaobsePredio/#{censoValorizacionPrediosBean.fodecampSeleccionado.focaetiq}" />
+    <view-id value="/site/censoValorizacion/modalFocaobsePredio.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalLiquidacionPreliminar.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="censoValorizacion-modalLiquidacionPreliminar">
+    <pattern value="//censoValorizacion/modalLiquidacionPreliminar/#{ censoValorizacionPrediosBean.detalleLiquidacion.get(0) }" />
+    <view-id value="/site/censoValorizacion/modalLiquidacionPreliminar.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en censoValorizacion.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="censoValorizacion">
+    <pattern value="//censoValorizacion/#{censoValorizacionBean.cargaPreRender('')}" />
+    <view-id value="/site/censoValorizacion.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en certificadoCierreEstablecimiento.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="certificadoCierreEstablecimiento-certificadoCierreEstablecimiento">
+    <pattern value="//certificadoCierreEstablecimiento/certificadoCierreEstablecimiento/#{appConfigMB.plantilla}" />
+    <view-id value="/site/certificadoCierreEstablecimiento/certificadoCierreEstablecimiento.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en tablaHistoricoCertCierre.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="certificadoCierreEstablecimiento-tablaHistoricoCertCierre">
+    <pattern value="//certificadoCierreEstablecimiento/tablaHistoricoCertCierre/#{(certificadoCierreEstablecimientoBean.listDocuadmiM.size() == 0 ? false : true)}" />
+    <view-id value="/site/certificadoCierreEstablecimiento/tablaHistoricoCertCierre.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en certificadoPazySalvo.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="certificadoPazySalvo">
+    <pattern value="//certificadoPazySalvo/#{appConfigMB.plantilla}" />
+    <view-id value="/site/certificadoPazySalvo.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en certificadoPazySalvoValorizacion.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="certificadoPazySalvoValorizacion">
+    <pattern value="//certificadoPazySalvoValorizacion/#{titles['page.certificado.titulo']}" />
+    <view-id value="/site/certificadoPazySalvoValorizacion.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en confirmarPago.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="confirmarPago">
+    <pattern value="//confirmarPago/#{appConfigMB.plantilla}" />
+    <view-id value="/site/confirmarPago.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en delineacionUrbana.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="delineacionUrbana">
+    <pattern value="//delineacionUrbana/#{appConfigMB.plantilla}" />
+    <view-id value="/site/delineacionUrbana.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en descargaArchivos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="descargaArchivos">
+    <pattern value="//descargaArchivos/#{appConfigMB.plantilla}" />
+    <view-id value="/site/descargaArchivos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en detalleFirmantes.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="detalleFirmantes">
+    <pattern value="//detalleFirmantes/#{detalleFirmantesBean.cargaPreRender(idForm,idModal)}" />
+    <view-id value="/site/detalleFirmantes.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en actividadesEconomicas.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="diligenciamiento-actividadesEconomicas">
+    <pattern value="//diligenciamiento/actividadesEconomicas/#{actividadesEconomicasBean.cargaPreRender(idForm)}" />
+    <view-id value="/site/diligenciamiento/actividadesEconomicas.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en presentaDeclaracionV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="diligenciamiento-presentaDeclaracionV2">
+    <pattern value="//diligenciamiento/presentaDeclaracionV2/#{presentaDeclaracionV2Bean.cargaPreRender(idForm,idModal)}" />
+    <view-id value="/site/diligenciamiento/presentaDeclaracionV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en renglonesDiliV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="diligenciamiento-renglonesDiliV2">
+    <pattern value="//diligenciamiento/renglonesDiliV2/#{renglonesDiliV2Bean.cargaPreRender(idForm,idSeccion,idBodyModal)}" />
+    <view-id value="/site/diligenciamiento/renglonesDiliV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en tablaRepresentantes.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="diligenciamiento-tablaRepresentantes">
+    <pattern value="//diligenciamiento/tablaRepresentantes/#{tablaRepresentantesBean.cargaPreRender(idForm)}" />
+    <view-id value="/site/diligenciamiento/tablaRepresentantes.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en diligencieDeclaracionV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="diligencieDeclaracionV2">
+    <pattern value="//diligencieDeclaracionV2/#{appConfigMB.plantilla}" />
+    <view-id value="/site/diligencieDeclaracionV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en encabezadoFormularioDeclaracionV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="encabezadoFormularioDeclaracionV2">
+    <pattern value="//encabezadoFormularioDeclaracionV2/#{encabezadoFormularioDeclaracionV2.cargaPreRender(idForm)}" />
+    <view-id value="/site/encabezadoFormularioDeclaracionV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en estadoCuentaValorizacion.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="estadoCuentaValorizacion">
+    <pattern value="//estadoCuentaValorizacion/#{appConfigMB.plantilla}" />
+    <view-id value="/site/estadoCuentaValorizacion.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalOpcionesDePago.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="estadoSolicitudBomberos-modalOpcionesDePago">
+    <pattern value="//estadoSolicitudBomberos/modalOpcionesDePago/#{labels['pagina.facturaexpress.listOppa']}" />
+    <view-id value="/site/estadoSolicitudBomberos/modalOpcionesDePago.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalTablaSolicitudes.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="estadoSolicitudBomberos-modalTablaSolicitudes">
+    <pattern value="//estadoSolicitudBomberos/modalTablaSolicitudes/#{tablaSolicitudesBean.mensajeAlertaModal}" />
+    <view-id value="/site/estadoSolicitudBomberos/modalTablaSolicitudes.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalTablaSolicitudesBoton.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="estadoSolicitudBomberos-modalTablaSolicitudesBoton">
+    <pattern value="//estadoSolicitudBomberos/modalTablaSolicitudesBoton/#{tablaSolicitudesBean.mensajeAlertaModal}" />
+    <view-id value="/site/estadoSolicitudBomberos/modalTablaSolicitudesBoton.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en estadoSolicitudBomberos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="estadoSolicitudBomberos">
+    <pattern value="//estadoSolicitudBomberos/#{appConfigMB.plantilla}" />
+    <view-id value="/site/estadoSolicitudBomberos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en facturaDelineacion.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="facturaDelineacion">
+    <pattern value="//facturaDelineacion/#{appConfigMB.plantilla}" />
+    <view-id value="/site/facturaDelineacion.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en facturaExpres.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="facturaExpres">
+    <pattern value="//facturaExpres/#{appConfigMB.plantilla}" />
+    <view-id value="/site/facturaExpres.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en facturaExpresV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="facturaExpresV2">
+    <pattern value="//facturaExpresV2/#{titles['page.facturaexpres.title1']}" />
+    <view-id value="/site/facturaExpresV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en facturaExpresValorizacion.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="facturaExpresValorizacion">
+    <pattern value="//facturaExpresValorizacion/#{titles['page.facturaexpres.title1']}" />
+    <view-id value="/site/facturaExpresValorizacion.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en contenidoEnviaCodigo.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="firmaDeclaracion-contenidoEnviaCodigo">
+    <pattern value="//firmaDeclaracion/contenidoEnviaCodigo/#{labels['pagina.firmelec.texto1']}" />
+    <view-id value="/site/firmaDeclaracion/contenidoEnviaCodigo.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en contenidoIdFirma.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="firmaDeclaracion-contenidoIdFirma">
+    <pattern value="//firmaDeclaracion/contenidoIdFirma/#{firmaDeclaracionBean.idfirma != null}" />
+    <view-id value="/site/firmaDeclaracion/contenidoIdFirma.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalFirmar.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="firmaDeclaracion-modalFirmar">
+    <pattern value="//firmaDeclaracion/modalFirmar/#{labels['pagina.firmelec.codivali.texto']}" />
+    <view-id value="/site/firmaDeclaracion/modalFirmar.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalFormularioCodivali.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="firmaDeclaracion-modalFormularioCodivali">
+    <pattern value="//firmaDeclaracion/modalFormularioCodivali/#{labels['pagina.firmelec.modal.texto']}" />
+    <view-id value="/site/firmaDeclaracion/modalFormularioCodivali.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalInfoInicial.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="firmaDeclaracion-modalInfoInicial">
+    <pattern value="//firmaDeclaracion/modalInfoInicial/#{ (firmaDeclaracionBean.valifechvenci or properties['valida.fechavencimiento'] eq 'N') and !firmaDeclaracionBean.valiclasterc  }" />
+    <view-id value="/site/firmaDeclaracion/modalInfoInicial.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalPresentarDecl.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="firmaDeclaracion-modalPresentarDecl">
+    <pattern value="//firmaDeclaracion/modalPresentarDecl/#{labels['pagina.presdecl.titulo']}" />
+    <view-id value="/site/firmaDeclaracion/modalPresentarDecl.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en firmaDeclaracion.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="firmaDeclaracion">
+    <pattern value="//firmaDeclaracion/#{appConfigMB.plantilla}" />
+    <view-id value="/site/firmaDeclaracion.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en formPredioVisorGeografico.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formPredioVisorGeografico">
+    <pattern value="//formPredioVisorGeografico/#{request.contextPath}" />
+    <view-id value="/site/formPredioVisorGeografico.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalFormBomberos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formularioBomberos-modalFormBomberos">
+    <pattern value="//formularioBomberos/modalFormBomberos/#{formularioBomberosBean.mensajeAlertaModal}" />
+    <view-id value="/site/formularioBomberos/modalFormBomberos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalFormCamposFaltantes.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formularioBomberos-modalFormCamposFaltantes">
+    <pattern value="//formularioBomberos/modalFormCamposFaltantes/#{formularioBomberosBean.mensajeAlertaModal}" />
+    <view-id value="/site/formularioBomberos/modalFormCamposFaltantes.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en formularioBomberos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formularioBomberos">
+    <pattern value="//formularioBomberos/#{appConfigMB.plantilla}" />
+    <view-id value="/site/formularioBomberos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en formularioDeclaracionV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formularioDeclaracionV2">
+    <pattern value="//formularioDeclaracionV2/#{appConfigMB.plantilla}" />
+    <view-id value="/site/formularioDeclaracionV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en formularioPago.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formularioPago">
+    <pattern value="//formularioPago/#{appConfigMB.plantilla}" />
+    <view-id value="/site/formularioPago.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en formularioRepresentante.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formularioRepresentante">
+    <pattern value="//formularioRepresentante/#{formularioRepresentanteBean.cargaPreRender(idForm)}" />
+    <view-id value="/site/formularioRepresentante.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en camposEcollect.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formulariosPago-camposEcollect">
+    <pattern value="//formulariosPago/camposEcollect/#{formularioPagoBean.campospago.tidodesc}" />
+    <view-id value="/site/formulariosPago/camposEcollect.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en camposPayulatam.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formulariosPago-camposPayulatam">
+    <pattern value="//formulariosPago/camposPayulatam/#{request.contextPath}" />
+    <view-id value="/site/formulariosPago/camposPayulatam.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en resumenEcollect.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formulariosPago-resumenEcollect">
+    <pattern value="//formulariosPago/resumenEcollect/#{resumenPagoBean.campospago.estado}" />
+    <view-id value="/site/formulariosPago/resumenEcollect.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en resumenPagoPayulatam.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="formulariosPago-resumenPagoPayulatam">
+    <pattern value="//formulariosPago/resumenPagoPayulatam/#{resumenPagoBean.obtenerValor('reference_pol')}" />
+    <view-id value="/site/formulariosPago/resumenPagoPayulatam.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en formularioRepresentante.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="gestionFirmantes-formularioRepresentante">
+    <pattern value="//gestionFirmantes/formularioRepresentante/#{gestionFirmantesBean.tercreprselectinfo.terccodi}" />
+    <view-id value="/site/gestionFirmantes/formularioRepresentante.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalConfirmacion.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="gestionFirmantes-modalConfirmacion">
+    <pattern value="//gestionFirmantes/modalConfirmacion/#{gestionFirmantesBean.actualizarTercrepr()}" />
+    <view-id value="/site/gestionFirmantes/modalConfirmacion.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en gestionFirmantes.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="gestionFirmantes">
+    <pattern value="//gestionFirmantes/#{appConfigMB.plantilla}" />
+    <view-id value="/site/gestionFirmantes.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en advertencia.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes-advertencia">
+    <pattern value="//habilitaFirmantes/advertencia/#{labels['pagina.habifirm.alerta']}" />
+    <view-id value="/site/habilitaFirmantes/advertencia.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en bloqueo.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes-bloqueo">
+    <pattern value="//habilitaFirmantes/bloqueo/#{ !habilitaFirmantesBean.termproc 
+                                          and !habilitaFirmantesBean.tercvali 
+                                          and !(habilitaFirmantesBean.getValidacionRIT() eq 'B')}" />
+    <view-id value="/site/habilitaFirmantes/bloqueo.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en cancelaproceso.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes-cancelaproceso">
+    <pattern value="//habilitaFirmantes/cancelaproceso/#{titles['pagina.habilitaFirmantes.cancproc']}" />
+    <view-id value="/site/habilitaFirmantes/cancelaproceso.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en codigoSeguridad.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes-codigoSeguridad">
+    <pattern value="//habilitaFirmantes/codigoSeguridad/#{titles['pagina.habilitaFirmantes.paso3']}" />
+    <view-id value="/site/habilitaFirmantes/codigoSeguridad.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en documentosAnexos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes-documentosAnexos">
+    <pattern value="//habilitaFirmantes/documentosAnexos/#{titles['pagina.habilitaFirmantes.paso5']}" />
+    <view-id value="/site/habilitaFirmantes/documentosAnexos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en infoFirmantes.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes-infoFirmantes">
+    <pattern value="//habilitaFirmantes/infoFirmantes/#{titles['pagina.habilitaFirmantes.paso4']}" />
+    <view-id value="/site/habilitaFirmantes/infoFirmantes.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalError.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes-modalError">
+    <pattern value="//habilitaFirmantes/modalError/#{habilitaFirmantesBean.texterro}" />
+    <view-id value="/site/habilitaFirmantes/modalError.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en preguntasSeguridad.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes-preguntasSeguridad">
+    <pattern value="//habilitaFirmantes/preguntasSeguridad/#{titles['pagina.habilitaFirmantes.paso2']}" />
+    <view-id value="/site/habilitaFirmantes/preguntasSeguridad.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en terminaproceso.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes-terminaproceso">
+    <pattern value="//habilitaFirmantes/terminaproceso/#{titles['pagina.habilitaFirmantes.termproc']}" />
+    <view-id value="/site/habilitaFirmantes/terminaproceso.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en terminosCondiciones.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes-terminosCondiciones">
+    <pattern value="//habilitaFirmantes/terminosCondiciones/#{titles['pagina.habilitaFirmantes.paso1']}" />
+    <view-id value="/site/habilitaFirmantes/terminosCondiciones.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en habilitaFirmantes.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="habilitaFirmantes">
+    <pattern value="//habilitaFirmantes/#{habilitaFirmantesBean.tercvali and !(habilitaFirmantesBean.getValidacionRIT() eq 'B')}" />
+    <view-id value="/site/habilitaFirmantes.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en home.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="home">
+    <pattern value="//home/#{request.contextPath}" />
+    <view-id value="/site/home.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en detalleFirmantes.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-detalleFirmantes">
+    <pattern value="//informacionExogena/detalleFirmantes/#{detalleFirmantesBean.cargaPreRender(idForm,idModal)}" />
+    <view-id value="/site/informacionExogena/detalleFirmantes.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalArchivoMost.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalArchivoMost">
+    <pattern value="//informacionExogena/modalArchivoMost/#{informacionExogenaBean.conteo.intValue()}" />
+    <view-id value="/site/informacionExogena/modalArchivoMost.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalArchivoMostac.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalArchivoMostac">
+    <pattern value="//informacionExogena/modalArchivoMostac/#{informacionExogenaBean.conteo.intValue()}" />
+    <view-id value="/site/informacionExogena/modalArchivoMostac.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalBorrar.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalBorrar">
+    <pattern value="//informacionExogena/modalBorrar/#{informacionExogenaBean.borrarRegistro2()}" />
+    <view-id value="/site/informacionExogena/modalBorrar.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalConfirm1.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalConfirm1">
+    <pattern value="//informacionExogena/modalConfirm1/#{labels['pagina.infoExog.confirmar']}" />
+    <view-id value="/site/informacionExogena/modalConfirm1.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalConfirm2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalConfirm2">
+    <pattern value="//informacionExogena/modalConfirm2/#{labels['pagina.infoExog.confirmar']}" />
+    <view-id value="/site/informacionExogena/modalConfirm2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalConfirm3.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalConfirm3">
+    <pattern value="//informacionExogena/modalConfirm3/#{labels['pagina.infoExog.confirmar']}" />
+    <view-id value="/site/informacionExogena/modalConfirm3.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalDatatableArchivos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalDatatableArchivos">
+    <pattern value="//informacionExogena/modalDatatableArchivos/#{informacionExogenaBean.gestArchListM}" />
+    <view-id value="/site/informacionExogena/modalDatatableArchivos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalDatatableNota.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalDatatableNota">
+    <pattern value="//informacionExogena/modalDatatableNota/#{informacionExogenaBean.periodo}" />
+    <view-id value="/site/informacionExogena/modalDatatableNota.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalDatatableNota2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalDatatableNota2">
+    <pattern value="//informacionExogena/modalDatatableNota2/#{labels['pagina.infoExog.mens3soacha']}" />
+    <view-id value="/site/informacionExogena/modalDatatableNota2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalDetalleFirmaExog.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalDetalleFirmaExog">
+    <pattern value="//informacionExogena/modalDetalleFirmaExog/#{labels['pagina.infoExog.mens3soacha']}" />
+    <view-id value="/site/informacionExogena/modalDetalleFirmaExog.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalErrores.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalErrores">
+    <pattern value="//informacionExogena/modalErrores/#{informacionExogenaBean.mensaje}" />
+    <view-id value="/site/informacionExogena/modalErrores.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalErrorProces.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalErrorProces">
+    <pattern value="//informacionExogena/modalErrorProces/#{informacionExogenaBean.conteo.intValue()}" />
+    <view-id value="/site/informacionExogena/modalErrorProces.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalFileUpload.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalFileUpload">
+    <pattern value="//informacionExogena/modalFileUpload/#{informacionExogenaBean.msgModal}" />
+    <view-id value="/site/informacionExogena/modalFileUpload.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalPresentar.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalPresentar">
+    <pattern value="//informacionExogena/modalPresentar/#{labels['pagina.infoExog.confirmar']}" />
+    <view-id value="/site/informacionExogena/modalPresentar.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalPresentarExog.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalPresentarExog">
+    <pattern value="//informacionExogena/modalPresentarExog/#{informacionExogenaBean.presentarInfoExog()}" />
+    <view-id value="/site/informacionExogena/modalPresentarExog.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalProcesoEx.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalProcesoEx">
+    <pattern value="//informacionExogena/modalProcesoEx/#{informacionExogenaBean.msgExito}" />
+    <view-id value="/site/informacionExogena/modalProcesoEx.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalProcesoFinalizado.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-modalProcesoFinalizado">
+    <pattern value="//informacionExogena/modalProcesoFinalizado/#{informacionExogenaBean.diffHours}" />
+    <view-id value="/site/informacionExogena/modalProcesoFinalizado.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en tabCargar.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-tabCargar">
+    <pattern value="//informacionExogena/tabCargar/#{titles['pagina.infoexog.text2']}" />
+    <view-id value="/site/informacionExogena/tabCargar.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en tabConsultaHistorica.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-tabConsultaHistorica">
+    <pattern value="//informacionExogena/tabConsultaHistorica/#{titles['pagina.infoExog.paso4']}" />
+    <view-id value="/site/informacionExogena/tabConsultaHistorica.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en tabDescargaDiligencia.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-tabDescargaDiligencia">
+    <pattern value="//informacionExogena/tabDescargaDiligencia/#{titles['pagina.infoexog.text1']}" />
+    <view-id value="/site/informacionExogena/tabDescargaDiligencia.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en tabValidaCorrige.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena-tabValidaCorrige">
+    <pattern value="//informacionExogena/tabValidaCorrige/#{titles['pagina.infoexog.text3']}" />
+    <view-id value="/site/informacionExogena/tabValidaCorrige.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en informacionExogena.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogena">
+    <pattern value="//informacionExogena/#{appConfigMB.plantilla}" />
+    <view-id value="/site/informacionExogena.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en informacionExogenaTemp.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="informacionExogenaTemp">
+    <pattern value="//informacionExogenaTemp/#{appConfigMB.plantilla}" />
+    <view-id value="/site/informacionExogenaTemp.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en listaCertificado.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="listaCertificado">
+    <pattern value="//listaCertificado/#{certificadoPazySalvoValorizacionBean.listpasysalvo}" />
+    <view-id value="/site/listaCertificado.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en loadPage.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="loadPage">
+    <pattern value="//loadPage/#{request.contextPath}" />
+    <view-id value="/site/loadPage.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en loginV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="loginV2">
+    <pattern value="//loginV2/#{appConfigMB.plantilla}" />
+    <view-id value="/site/loginV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en notificaciones.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="notificaciones">
+    <pattern value="//notificaciones/#{appConfigMB.plantilla}" />
+    <view-id value="/site/notificaciones.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en opcionesModuloBomberos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="opcionesModuloBomberos">
+    <pattern value="//opcionesModuloBomberos/#{appConfigMB.plantilla}" />
+    <view-id value="/site/opcionesModuloBomberos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en otrasDeclaraciones.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="otrasDeclaraciones">
+    <pattern value="//otrasDeclaraciones/#{appConfigMB.plantilla}" />
+    <view-id value="/site/otrasDeclaraciones.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en pdfPreview.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="pdfPreview">
+    <pattern value="//pdfPreview/#{sessionUsuarioMB.borrarRutaPDF()}" />
+    <view-id value="/site/pdfPreview.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en perfilFirmante.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="perfilFirmante">
+    <pattern value="//perfilFirmante/#{appConfigMB.plantilla}" />
+    <view-id value="/site/perfilFirmante.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en perfilUsuarioValorizacion.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="perfilUsuarioValorizacion">
+    <pattern value="//perfilUsuarioValorizacion/#{appConfigMB.plantilla}" />
+    <view-id value="/site/perfilUsuarioValorizacion.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en preguntasSeguridadRegistroUsuarioV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="preguntasSeguridadRegistroUsuarioV2">
+    <pattern value="//preguntasSeguridadRegistroUsuarioV2/#{registroUsuarioV2Bean.mensajeRespuestasInvalidas}" />
+    <view-id value="/site/preguntasSeguridadRegistroUsuarioV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en recordarContrasenaV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="recordarContrasenaV2">
+    <pattern value="//recordarContrasenaV2/#{appConfigMB.plantilla}" />
+    <view-id value="/site/recordarContrasenaV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en recordarContrasenaValorizacion.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="recordarContrasenaValorizacion">
+    <pattern value="//recordarContrasenaValorizacion/#{titles['pagina.recordarcontrasena.title1']}" />
+    <view-id value="/site/recordarContrasenaValorizacion.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en registroUsuarioBienvenidoV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="registroUsuarioBienvenidoV2">
+    <pattern value="//registroUsuarioBienvenidoV2/#{appConfigMB.plantilla}" />
+    <view-id value="/site/registroUsuarioBienvenidoV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en registroUsuarioExitosoV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="registroUsuarioExitosoV2">
+    <pattern value="//registroUsuarioExitosoV2/#{appConfigMB.plantilla}" />
+    <view-id value="/site/registroUsuarioExitosoV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en registroUsuarioV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="registroUsuarioV2">
+    <pattern value="//registroUsuarioV2/#{appConfigMB.plantilla}" />
+    <view-id value="/site/registroUsuarioV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en registroUsuarioValidaDocumentoV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="registroUsuarioValidaDocumentoV2">
+    <pattern value="//registroUsuarioValidaDocumentoV2/#{appConfigMB.plantilla}" />
+    <view-id value="/site/registroUsuarioValidaDocumentoV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en resumenPago.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="resumenPago">
+    <pattern value="//resumenPago/#{appConfigMB.plantilla}" />
+    <view-id value="/site/resumenPago.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en actividadesEconomicasRit.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-actividadesEconomicasRit">
+    <pattern value="//rit/actividadesEconomicasRit/#{actividadesEconomicasRitBean.preRender(subseccion)}" />
+    <view-id value="/site/rit/actividadesEconomicasRit.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en actividadesEstablecimiento.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-actividadesEstablecimiento">
+    <pattern value="//rit/actividadesEstablecimiento/#{registrarEstablecimientoBean.preRender(subseccion)}" />
+    <view-id value="/site/rit/actividadesEstablecimiento.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en anexos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-anexos">
+    <pattern value="//rit/anexos/#{anexoBean.preRender(subseccion)}" />
+    <view-id value="/site/rit/anexos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en cerrarEstablecimientos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-cerrarEstablecimientos">
+    <pattern value="//rit/cerrarEstablecimientos/#{cerrarEstablecimientosBean.preRender(subseccion)}" />
+    <view-id value="/site/rit/cerrarEstablecimientos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en consultarRit.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-consultarRit">
+    <pattern value="//rit/consultarRit/#{appConfigMB.plantilla}" />
+    <view-id value="/site/rit/consultarRit.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en establecimientos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-establecimientos">
+    <pattern value="//rit/establecimientos/#{establecimientosBean.preRender(subseccion)}" />
+    <view-id value="/site/rit/establecimientos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en informacionContribuyente.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-informacionContribuyente">
+    <pattern value="//rit/informacionContribuyente/#{informacionContribuyenteBean.preRender(idForm,idFormTabView,idParcialPanelSubmit,subseccion)}" />
+    <view-id value="/site/rit/informacionContribuyente.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en informacionContribuyenteComercial.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-informacionContribuyenteComercial">
+    <pattern value="//rit/informacionContribuyenteComercial/#{informacionContribuyenteComercialBean.preRender(subseccion)}" />
+    <view-id value="/site/rit/informacionContribuyenteComercial.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en loginRitApertura.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-loginRitApertura">
+    <pattern value="//rit/loginRitApertura/#{appConfigMB.plantilla}" />
+    <view-id value="/site/rit/loginRitApertura.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en loginRitNovedad.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-loginRitNovedad">
+    <pattern value="//rit/loginRitNovedad/#{appConfigMB.plantilla}" />
+    <view-id value="/site/rit/loginRitNovedad.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en registrarEstablecimiento.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-registrarEstablecimiento">
+    <pattern value="//rit/registrarEstablecimiento/#{registrarEstablecimientoBean.preRender(subseccion)}" />
+    <view-id value="/site/rit/registrarEstablecimiento.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en representantes.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-representantes">
+    <pattern value="//rit/representantes/#{representantesBean.preRender(subseccion)}" />
+    <view-id value="/site/rit/representantes.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en responsabilidadTributaria.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-responsabilidadTributaria">
+    <pattern value="//rit/responsabilidadTributaria/#{responsabilidadTributariaBean.preRender(idForm,idFormTabView,idFormPanelSeccion,subseccion)}" />
+    <view-id value="/site/rit/responsabilidadTributaria.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en tablaRitGuardado.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-tablaRitGuardado">
+    <pattern value="//rit/tablaRitGuardado/#{loginRitNovedadBean.preRender()}" />
+    <view-id value="/site/rit/tablaRitGuardado.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en terminosCondiciones.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-terminosCondiciones">
+    <pattern value="//rit/terminosCondiciones/#{informacionContribuyenteBean.boTerminosCondiciones}" />
+    <view-id value="/site/rit/terminosCondiciones.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en ubicacionContacto.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit-ubicacionContacto">
+    <pattern value="//rit/ubicacionContacto/#{ubicacionContactoBean.preRender(subseccion)}" />
+    <view-id value="/site/rit/ubicacionContacto.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en rit.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="rit">
+    <pattern value="//rit/#{appConfigMB.plantilla}" />
+    <view-id value="/site/rit.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en solicitudPropietarioPredio.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="solicitudPropietarioPredio">
+    <pattern value="//solicitudPropietarioPredio/#{solicitudPropietarioPredioBean.cargaPreRender('')}" />
+    <view-id value="/site/solicitudPropietarioPredio.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en solicitudPropietarioPredioAnexos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="solicitudPropietarioPredioAnexos">
+    <pattern value="//solicitudPropietarioPredioAnexos/#{solicitudPropietarioPredioAnexosBean.titulo}" />
+    <view-id value="/site/solicitudPropietarioPredioAnexos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en tablaFormularioGuardadoV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="tablaFormularioGuardadoV2">
+    <pattern value="//tablaFormularioGuardadoV2/#{tablaFormularioGuardadoV2.cargaPreRender(idForm)}" />
+    <view-id value="/site/tablaFormularioGuardadoV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en tablaListadoDeolestaV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="tablaListadoDeolestaV2">
+    <pattern value="//tablaListadoDeolestaV2/#{tablaListadoDeolestaV2Bean.cargaPreRender(idForm)}" />
+    <view-id value="/site/tablaListadoDeolestaV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en tablaSolicitudes.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="tablaSolicitudes">
+    <pattern value="//tablaSolicitudes/#{tablaSolicitudesBean.cargaPreRender(idForm)}" />
+    <view-id value="/site/tablaSolicitudes.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en usuarioFirmaElectronica.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="usuarioFirmaElectronica">
+    <pattern value="//usuarioFirmaElectronica/#{appConfigMB.plantilla}" />
+    <view-id value="/site/usuarioFirmaElectronica.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en listaCertificadoBomberos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="valiCertificadosBomberos-listaCertificadoBomberos">
+    <pattern value="//valiCertificadosBomberos/listaCertificadoBomberos/#{valiCertificadosBomberosBean.tipoImpuesto}" />
+    <view-id value="/site/valiCertificadosBomberos/listaCertificadoBomberos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalCertificadosBomberosValido.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="valiCertificadosBomberos-modalCertificadosBomberosValido">
+    <pattern value="//valiCertificadosBomberos/modalCertificadosBomberosValido/#{labels['pagina.general.aceptar']}" />
+    <view-id value="/site/valiCertificadosBomberos/modalCertificadosBomberosValido.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en valiCertificadosBomberos.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="valiCertificadosBomberos">
+    <pattern value="//valiCertificadosBomberos/#{appConfigMB.plantilla}" />
+    <view-id value="/site/valiCertificadosBomberos.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en listaCertificadoCierre.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="valiCertificadosCierre-listaCertificadoCierre">
+    <pattern value="//valiCertificadosCierre/listaCertificadoCierre/#{valiCertificadosCierreBean.tipoImpuesto}" />
+    <view-id value="/site/valiCertificadosCierre/listaCertificadoCierre.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalCertificadosCierreValido.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="valiCertificadosCierre-modalCertificadosCierreValido">
+    <pattern value="//valiCertificadosCierre/modalCertificadosCierreValido/#{labels['pagina.general.aceptar']}" />
+    <view-id value="/site/valiCertificadosCierre/modalCertificadosCierreValido.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en valiCertificadosCierre.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="valiCertificadosCierre">
+    <pattern value="//valiCertificadosCierre/#{appConfigMB.plantilla}" />
+    <view-id value="/site/valiCertificadosCierre.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalCertificado.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="validacionPazySalvoV2-modalCertificado">
+    <pattern value="//validacionPazySalvoV2/modalCertificado/#{validacionPazySalvoV2Bean.certificado.tiimdesc}" />
+    <view-id value="/site/validacionPazySalvoV2/modalCertificado.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalCertificadoInvias.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="validacionPazySalvoV2-modalCertificadoInvias">
+    <pattern value="//validacionPazySalvoV2/modalCertificadoInvias/#{validacionPazySalvoV2Bean.certificado.certcataPK.cecanume}" />
+    <view-id value="/site/validacionPazySalvoV2/modalCertificadoInvias.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en modalQr.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="validacionPazySalvoV2-modalQr">
+    <pattern value="//validacionPazySalvoV2/modalQr/#{titles['page.validacertificado.modal.texto']}" />
+    <view-id value="/site/validacionPazySalvoV2/modalQr.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en validacionPazySalvoV2.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="validacionPazySalvoV2">
+    <pattern value="//validacionPazySalvoV2/#{appConfigMB.plantilla}" />
+    <view-id value="/site/validacionPazySalvoV2.xhtml" />
+  </url-mapping>
+
+  <!-- Posible ruta dinámica detectada en visorGeograficoInvias.xhtml -->
+  <!-- Sugerencia automática, revisar: -->
+    <url-mapping id="visorGeograficoInvias">
+    <pattern value="//visorGeograficoInvias/#{request.contextPath}" />
+    <view-id value="/site/visorGeograficoInvias.xhtml" />
+  </url-mapping>
+
+  <!-- Rutas dinámicas que dependen de bundles o beans -->
+  <!-- Completar manualmente si es necesario -->
+
+  <!-- Ejemplo: 
+       <url-mapping id="perfil-dinamico">
+         <pattern value="/usuario/perfil/#{userBean.id}" />
+         <view-id value="/site/usuario/perfil.xhtml" />
+       </url-mapping> 
+  -->
+
+</pretty-config>

@@ -1,0 +1,13 @@
+[
+    {
+        "module": "rit",
+        "id": "rit-loginRitApertura",
+        "pattern": "/rit/loginRitApertura/#{appConfigMB.plantilla}",
+        "viewId": "/site/rit/loginRitApertura.xhtml",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }
+]

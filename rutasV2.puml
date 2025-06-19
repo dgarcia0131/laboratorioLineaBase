@@ -1,0 +1,13 @@
+@startuml
+package "moduloInicio" {
+  [Inicio] as home
+}
+
+package "moduloRit" {
+  [Actividades Económicas] as actividades
+  [Establecimiento dinámico] as est_din
+}
+
+home --> actividades : ir a RIT
+actividades --> est_din : seleccionar establecimiento dinámico
+@enduml

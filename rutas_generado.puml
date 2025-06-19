@@ -1,0 +1,328 @@
+@startuml
+package "tablaListadoDeolesta_" {
+  [tablaListadoDeolesta] as tablaListadoDeolesta
+}
+
+package "delineacionUrbana_" {
+  [delineacionUrbana] as delineacionUrbana
+}
+
+package "estadoCuentaValorizacion_" {
+  [estadoCuentaValorizacion] as estadoCuentaValorizacion
+}
+
+package "registroUsuarioBienvenido_" {
+  [registroUsuarioBienvenido] as registroUsuarioBienvenido
+}
+
+package "formularioRepresentante_" {
+  [formularioRepresentante] as formularioRepresentante
+}
+
+package "registroUsuarioExitoso_" {
+  [registroUsuarioExitoso] as registroUsuarioExitoso
+}
+
+package "registroUsuarioValidaDocumento_" {
+  [registroUsuarioValidaDocumento] as registroUsuarioValidaDocumento
+}
+
+package "certificadoCierreEstablecimiento_" {
+  [certificadoCierreEstablecimiento] as certificadoCierreEstablecimientocertificadoCierreEstablecimiento
+  [tablaHistoricoCertCierre] as certificadoCierreEstablecimientotablaHistoricoCertCierre
+}
+
+package "facturaExpresValorizacion_" {
+  [facturaExpresValorizacion] as facturaExpresValorizacion
+}
+
+package "listaCertificado_" {
+  [listaCertificado] as listaCertificado
+}
+
+package "certificadoPazySalvo_" {
+  [certificadoPazySalvo] as certificadoPazySalvo
+}
+
+package "validacionPazySalvo_" {
+  [modalCertificado] as validacionPazySalvomodalCertificado
+  [modalCertificadoInvias] as validacionPazySalvomodalCertificadoInvias
+  [modalQr] as validacionPazySalvomodalQr
+  [validacionPazySalvo] as validacionPazySalvo
+}
+
+package "gestionFirmantes_" {
+  [formularioRepresentante] as gestionFirmantesformularioRepresentante
+  [modalConfirmacion] as gestionFirmantesmodalConfirmacion
+  [gestionFirmantes] as gestionFirmantes
+}
+
+package "resumenPago_" {
+  [resumenPago] as resumenPago
+}
+
+package "diligencieDeclaracion_" {
+  [diligencieDeclaracion] as diligencieDeclaracion
+}
+
+package "detalleFirmantes_" {
+  [detalleFirmantes] as detalleFirmantes
+}
+
+package "otrasDeclaraciones_" {
+  [otrasDeclaraciones] as otrasDeclaraciones
+}
+
+package "rit_" {
+  [actividadesEconomicasRit] as ritactividadesEconomicasRit
+  [actividadesEstablecimiento] as ritactividadesEstablecimiento
+  [anexos] as ritanexos
+  [cerrarEstablecimientos] as ritcerrarEstablecimientos
+  [consultarRit] as ritconsultarRit
+  [establecimientos] as ritestablecimientos
+  [informacionContribuyente] as ritinformacionContribuyente
+  [informacionContribuyenteComercial] as ritinformacionContribuyenteComercial
+  [loginRitApertura] as ritloginRitApertura
+  [loginRitNovedad] as ritloginRitNovedad
+  [registrarEstablecimiento] as ritregistrarEstablecimiento
+  [representantes] as ritrepresentantes
+  [responsabilidadTributaria] as ritresponsabilidadTributaria
+  [tablaRitGuardado] as rittablaRitGuardado
+  [terminosCondiciones] as ritterminosCondiciones
+  [ubicacionContacto] as ritubicacionContacto
+  [rit] as rit
+}
+
+package "informacionExogena_" {
+  [detalleFirmantes] as informacionExogenadetalleFirmantes
+  [modalArchivoMost] as informacionExogenamodalArchivoMost
+  [modalArchivoMostac] as informacionExogenamodalArchivoMostac
+  [modalBorrar] as informacionExogenamodalBorrar
+  [modalConfirm1] as informacionExogenamodalConfirm1
+  [modalConfirm2] as informacionExogenamodalConfirm2
+  [modalConfirm3] as informacionExogenamodalConfirm3
+  [modalDatatableArchivos] as informacionExogenamodalDatatableArchivos
+  [modalDatatableNota] as informacionExogenamodalDatatableNota
+  [modalDatatableNota2] as informacionExogenamodalDatatableNota2
+  [modalDetalleFirmaExog] as informacionExogenamodalDetalleFirmaExog
+  [modalErrores] as informacionExogenamodalErrores
+  [modalErrorProces] as informacionExogenamodalErrorProces
+  [modalFileUpload] as informacionExogenamodalFileUpload
+  [modalPresentar] as informacionExogenamodalPresentar
+  [modalPresentarExog] as informacionExogenamodalPresentarExog
+  [modalProcesoEx] as informacionExogenamodalProcesoEx
+  [modalProcesoFinalizado] as informacionExogenamodalProcesoFinalizado
+  [tabCargar] as informacionExogenatabCargar
+  [tabConsultaHistorica] as informacionExogenatabConsultaHistorica
+  [tabDescargaDiligencia] as informacionExogenatabDescargaDiligencia
+  [tabValidaCorrige] as informacionExogenatabValidaCorrige
+  [informacionExogena] as informacionExogena
+}
+
+package "pdfPreview_" {
+  [pdfPreview] as pdfPreview
+}
+
+package "confirmarPago_" {
+  [confirmarPago] as confirmarPago
+}
+
+package "perfilFirmante_" {
+  [perfilFirmante] as perfilFirmante
+}
+
+package "login_" {
+  [login] as login
+}
+
+package "usuarioFirmaElectronica_" {
+  [usuarioFirmaElectronica] as usuarioFirmaElectronica
+}
+
+package "valiCertificadosCierre_" {
+  [listaCertificadoCierre] as valiCertificadosCierrelistaCertificadoCierre
+  [modalCertificadosCierreValido] as valiCertificadosCierremodalCertificadosCierreValido
+  [valiCertificadosCierre] as valiCertificadosCierre
+}
+
+package "estadoSolicitudBomberos_" {
+  [modalOpcionesDePago] as estadoSolicitudBomberosmodalOpcionesDePago
+  [modalTablaSolicitudes] as estadoSolicitudBomberosmodalTablaSolicitudes
+  [modalTablaSolicitudesBoton] as estadoSolicitudBomberosmodalTablaSolicitudesBoton
+  [estadoSolicitudBomberos] as estadoSolicitudBomberos
+}
+
+package "preguntasSeguridadRegistroUsuario_" {
+  [preguntasSeguridadRegistroUsuario] as preguntasSeguridadRegistroUsuario
+}
+
+package "descargaArchivos_" {
+  [descargaArchivos] as descargaArchivos
+}
+
+package "facturaExpres_" {
+  [facturaExpres] as facturaExpres
+}
+
+package "facturaDelineacion_" {
+  [facturaDelineacion] as facturaDelineacion
+}
+
+package "formularioBomberos_" {
+  [modalFormBomberos] as formularioBomberosmodalFormBomberos
+  [modalFormCamposFaltantes] as formularioBomberosmodalFormCamposFaltantes
+  [formularioBomberos] as formularioBomberos
+}
+
+package "tablaFormularioGuardado_" {
+  [tablaFormularioGuardado] as tablaFormularioGuardado
+}
+
+package "notificaciones_" {
+  [notificaciones] as notificaciones
+}
+
+package "habilitaFirmantes_" {
+  [advertencia] as habilitaFirmantesadvertencia
+  [bloqueo] as habilitaFirmantesbloqueo
+  [cancelaproceso] as habilitaFirmantescancelaproceso
+  [codigoSeguridad] as habilitaFirmantescodigoSeguridad
+  [documentosAnexos] as habilitaFirmantesdocumentosAnexos
+  [infoFirmantes] as habilitaFirmantesinfoFirmantes
+  [modalError] as habilitaFirmantesmodalError
+  [preguntasSeguridad] as habilitaFirmantespreguntasSeguridad
+  [terminaproceso] as habilitaFirmantesterminaproceso
+  [terminosCondiciones] as habilitaFirmantesterminosCondiciones
+  [habilitaFirmantes] as habilitaFirmantes
+}
+
+package "opcionesModuloBomberos_" {
+  [opcionesModuloBomberos] as opcionesModuloBomberos
+}
+
+package "perfilUsuarioValorizacion_" {
+  [perfilUsuarioValorizacion] as perfilUsuarioValorizacion
+}
+
+package "recordarContrasenaValorizacion_" {
+  [recordarContrasenaValorizacion] as recordarContrasenaValorizacion
+}
+
+package "firmaDeclaracion_" {
+  [contenidoEnviaCodigo] as firmaDeclaracioncontenidoEnviaCodigo
+  [contenidoIdFirma] as firmaDeclaracioncontenidoIdFirma
+  [modalFirmar] as firmaDeclaracionmodalFirmar
+  [modalFormularioCodivali] as firmaDeclaracionmodalFormularioCodivali
+  [modalInfoInicial] as firmaDeclaracionmodalInfoInicial
+  [modalPresentarDecl] as firmaDeclaracionmodalPresentarDecl
+  [firmaDeclaracion] as firmaDeclaracion
+}
+
+package "valiCertificadosBomberos_" {
+  [listaCertificadoBomberos] as valiCertificadosBomberoslistaCertificadoBomberos
+  [modalCertificadosBomberosValido] as valiCertificadosBomberosmodalCertificadosBomberosValido
+  [valiCertificadosBomberos] as valiCertificadosBomberos
+}
+
+package "certificadoPazySalvoValorizacion_" {
+  [certificadoPazySalvoValorizacion] as certificadoPazySalvoValorizacion
+}
+
+package "solicitudPropietarioPredioAnexos_" {
+  [solicitudPropietarioPredioAnexos] as solicitudPropietarioPredioAnexos
+}
+
+package "censoValorizacion_" {
+  [modalAnexosFodecamp] as censoValorizacionmodalAnexosFodecamp
+  [modalAnexosFodecampPredio] as censoValorizacionmodalAnexosFodecampPredio
+  [modalFocaobse] as censoValorizacionmodalFocaobse
+  [modalFocaobsePredio] as censoValorizacionmodalFocaobsePredio
+  [modalLiquidacionPreliminar] as censoValorizacionmodalLiquidacionPreliminar
+  [censoValorizacion] as censoValorizacion
+}
+
+package "registroUsuario_" {
+  [registroUsuario] as registroUsuario
+}
+
+package "formPredioVisorGeografico_" {
+  [formPredioVisorGeografico] as formPredioVisorGeografico
+}
+
+package "recordarContrasena_" {
+  [recordarContrasena] as recordarContrasena
+}
+
+package "acuerdoFirmaElectronica_" {
+  [advertencia] as acuerdoFirmaElectronicaadvertencia
+  [bloqueo] as acuerdoFirmaElectronicabloqueo
+  [codigoSeguridad] as acuerdoFirmaElectronicacodigoSeguridad
+  [descargaArchivo] as acuerdoFirmaElectronicadescargaArchivo
+  [informacionTercero] as acuerdoFirmaElectronicainformacionTercero
+  [modalError] as acuerdoFirmaElectronicamodalError
+  [terminosCondiciones] as acuerdoFirmaElectronicaterminosCondiciones
+  [acuerdoFirmaElectronica] as acuerdoFirmaElectronica
+}
+
+package "formularioPago_" {
+  [formularioPago] as formularioPago
+}
+
+package "informacionExogenaTemp_" {
+  [informacionExogenaTemp] as informacionExogenaTemp
+}
+
+package "encabezadoFormularioDeclaracion_" {
+  [encabezadoFormularioDeclaracion] as encabezadoFormularioDeclaracion
+}
+
+package "cambioClaveValorizacion_" {
+  [cambioClaveValorizacion] as cambioClaveValorizacion
+}
+
+package "solicitudPropietarioPredio_" {
+  [solicitudPropietarioPredio] as solicitudPropietarioPredio
+}
+
+package "acuerdoPago_" {
+  [acuerdoPago] as acuerdoPago
+}
+
+package "formulariosPago_" {
+  [camposEcollect] as formulariosPagocamposEcollect
+  [camposPayulatam] as formulariosPagocamposPayulatam
+  [resumenEcollect] as formulariosPagoresumenEcollect
+  [resumenPagoPayulatam] as formulariosPagoresumenPagoPayulatam
+}
+
+package "formularioDeclaracion_" {
+  [formularioDeclaracion] as formularioDeclaracion
+}
+
+package "facturaExpres_" {
+  [facturaExpres] as facturaExpres
+}
+
+package "tablaSolicitudes_" {
+  [tablaSolicitudes] as tablaSolicitudes
+}
+
+package "loadPage_" {
+  [loadPage] as loadPage
+}
+
+package "home_" {
+  [home] as home
+}
+
+package "visorGeograficoInvias_" {
+  [visorGeograficoInvias] as visorGeograficoInvias
+}
+
+package "diligenciamiento_" {
+  [actividadesEconomicas] as diligenciamientoactividadesEconomicas
+  [presentaDeclaracion] as diligenciamientopresentaDeclaracion
+  [renglonesDili] as diligenciamientorenglonesDili
+  [tablaRepresentantes] as diligenciamientotablaRepresentantes
+}
+@enduml

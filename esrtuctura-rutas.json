@@ -1,0 +1,1547 @@
+[{
+    "tablaListadoDeolestaV2": [{
+        "pattern": "//tablaListadoDeolestaV2/#{tablaListadoDeolestaV2Bean.cargaPreRender(idForm)}",
+        "id": "tablaListadoDeolestaV2",
+        "viewId": "/site/tablaListadoDeolestaV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "cargaPreRender",
+            "params": ["idForm)"],
+            "bean": "tablaListadoDeolestaV2Bean"
+        }
+    }],
+    "delineacionUrbana": [{
+        "pattern": "//delineacionUrbana/#{appConfigMB.plantilla}",
+        "id": "delineacionUrbana",
+        "viewId": "/site/delineacionUrbana.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "estadoCuentaValorizacion": [{
+        "pattern": "//estadoCuentaValorizacion/#{appConfigMB.plantilla}",
+        "id": "estadoCuentaValorizacion",
+        "viewId": "/site/estadoCuentaValorizacion.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "registroUsuarioBienvenidoV2": [{
+        "pattern": "//registroUsuarioBienvenidoV2/#{appConfigMB.plantilla}",
+        "id": "registroUsuarioBienvenidoV2",
+        "viewId": "/site/registroUsuarioBienvenidoV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "formularioRepresentante": [{
+        "pattern": "//formularioRepresentante/#{formularioRepresentanteBean.cargaPreRender(idForm)}",
+        "id": "formularioRepresentante",
+        "viewId": "/site/formularioRepresentante.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "cargaPreRender",
+            "params": ["idForm)"],
+            "bean": "formularioRepresentanteBean"
+        }
+    }],
+    "registroUsuarioExitosoV2": [{
+        "pattern": "//registroUsuarioExitosoV2/#{appConfigMB.plantilla}",
+        "id": "registroUsuarioExitosoV2",
+        "viewId": "/site/registroUsuarioExitosoV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "registroUsuarioValidaDocumentoV2": [{
+        "pattern": "//registroUsuarioValidaDocumentoV2/#{appConfigMB.plantilla}",
+        "id": "registroUsuarioValidaDocumentoV2",
+        "viewId": "/site/registroUsuarioValidaDocumentoV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "certificadoCierreEstablecimiento": [
+        {
+            "pattern": "//certificadoCierreEstablecimiento/certificadoCierreEstablecimiento/#{appConfigMB.plantilla}",
+            "id": "certificadoCierreEstablecimiento-certificadoCierreEstablecimiento",
+            "viewId": "/site/certificadoCierreEstablecimiento/certificadoCierreEstablecimiento.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        },
+        {
+            "pattern": "//certificadoCierreEstablecimiento/tablaHistoricoCertCierre/#{(certificadoCierreEstablecimientoBean.listDocuadmiM.size() == 0 ? false : true)}",
+            "id": "certificadoCierreEstablecimiento-tablaHistoricoCertCierre",
+            "viewId": "/site/certificadoCierreEstablecimiento/tablaHistoricoCertCierre.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "listDocuadmiM",
+                "params": [],
+                "bean": "certificadoCierreEstablecimientoBean"
+            }
+        }
+    ],
+    "facturaExpresValorizacion": [{
+        "pattern": "//facturaExpresValorizacion/#{titles['page.facturaexpres.title1']}",
+        "id": "facturaExpresValorizacion",
+        "viewId": "/site/facturaExpresValorizacion.xhtml",
+        "type": "dynamic",
+        "associatedBundle": {
+            "bundle": "titles",
+            "key": "page.facturaexpres.title1"
+        }
+    }],
+    "listaCertificado": [{
+        "pattern": "//listaCertificado/#{certificadoPazySalvoValorizacionBean.listpasysalvo}",
+        "id": "listaCertificado",
+        "viewId": "/site/listaCertificado.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "listpasysalvo",
+            "params": [],
+            "bean": "certificadoPazySalvoValorizacionBean"
+        }
+    }],
+    "certificadoPazySalvo": [{
+        "pattern": "//certificadoPazySalvo/#{appConfigMB.plantilla}",
+        "id": "certificadoPazySalvo",
+        "viewId": "/site/certificadoPazySalvo.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "validacionPazySalvoV2": [
+        {
+            "pattern": "//validacionPazySalvoV2/modalCertificado/#{validacionPazySalvoV2Bean.certificado.tiimdesc}",
+            "id": "validacionPazySalvoV2-modalCertificado",
+            "viewId": "/site/validacionPazySalvoV2/modalCertificado.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//validacionPazySalvoV2/modalCertificadoInvias/#{validacionPazySalvoV2Bean.certificado.certcataPK.cecanume}",
+            "id": "validacionPazySalvoV2-modalCertificadoInvias",
+            "viewId": "/site/validacionPazySalvoV2/modalCertificadoInvias.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//validacionPazySalvoV2/modalQr/#{titles['page.validacertificado.modal.texto']}",
+            "id": "validacionPazySalvoV2-modalQr",
+            "viewId": "/site/validacionPazySalvoV2/modalQr.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "page.validacertificado.modal.texto"
+            }
+        },
+        {
+            "pattern": "//validacionPazySalvoV2/#{appConfigMB.plantilla}",
+            "id": "validacionPazySalvoV2",
+            "viewId": "/site/validacionPazySalvoV2.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        }
+    ],
+    "gestionFirmantes": [
+        {
+            "pattern": "//gestionFirmantes/formularioRepresentante/#{gestionFirmantesBean.tercreprselectinfo.terccodi}",
+            "id": "gestionFirmantes-formularioRepresentante",
+            "viewId": "/site/gestionFirmantes/formularioRepresentante.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//gestionFirmantes/modalConfirmacion/#{gestionFirmantesBean.actualizarTercrepr()}",
+            "id": "gestionFirmantes-modalConfirmacion",
+            "viewId": "/site/gestionFirmantes/modalConfirmacion.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "actualizarTercrepr",
+                "params": [")"],
+                "bean": "gestionFirmantesBean"
+            }
+        },
+        {
+            "pattern": "//gestionFirmantes/#{appConfigMB.plantilla}",
+            "id": "gestionFirmantes",
+            "viewId": "/site/gestionFirmantes.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        }
+    ],
+    "resumenPago": [{
+        "pattern": "//resumenPago/#{appConfigMB.plantilla}",
+        "id": "resumenPago",
+        "viewId": "/site/resumenPago.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "diligencieDeclaracionV2": [{
+        "pattern": "//diligencieDeclaracionV2/#{appConfigMB.plantilla}",
+        "id": "diligencieDeclaracionV2",
+        "viewId": "/site/diligencieDeclaracionV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "detalleFirmantes": [{
+        "pattern": "//detalleFirmantes/#{detalleFirmantesBean.cargaPreRender(idForm,idModal)}",
+        "id": "detalleFirmantes",
+        "viewId": "/site/detalleFirmantes.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "cargaPreRender",
+            "params": [
+                "idForm",
+                "idModal)"
+            ],
+            "bean": "detalleFirmantesBean"
+        }
+    }],
+    "otrasDeclaraciones": [{
+        "pattern": "//otrasDeclaraciones/#{appConfigMB.plantilla}",
+        "id": "otrasDeclaraciones",
+        "viewId": "/site/otrasDeclaraciones.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "rit": [
+        {
+            "pattern": "//rit/actividadesEconomicasRit/#{actividadesEconomicasRitBean.preRender(subseccion)}",
+            "id": "rit-actividadesEconomicasRit",
+            "viewId": "/site/rit/actividadesEconomicasRit.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": ["subseccion)"],
+                "bean": "actividadesEconomicasRitBean"
+            }
+        },
+        {
+            "pattern": "//rit/actividadesEstablecimiento/#{registrarEstablecimientoBean.preRender(subseccion)}",
+            "id": "rit-actividadesEstablecimiento",
+            "viewId": "/site/rit/actividadesEstablecimiento.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": ["subseccion)"],
+                "bean": "registrarEstablecimientoBean"
+            }
+        },
+        {
+            "pattern": "//rit/anexos/#{anexoBean.preRender(subseccion)}",
+            "id": "rit-anexos",
+            "viewId": "/site/rit/anexos.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": ["subseccion)"],
+                "bean": "anexoBean"
+            }
+        },
+        {
+            "pattern": "//rit/cerrarEstablecimientos/#{cerrarEstablecimientosBean.preRender(subseccion)}",
+            "id": "rit-cerrarEstablecimientos",
+            "viewId": "/site/rit/cerrarEstablecimientos.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": ["subseccion)"],
+                "bean": "cerrarEstablecimientosBean"
+            }
+        },
+        {
+            "pattern": "//rit/consultarRit/#{appConfigMB.plantilla}",
+            "id": "rit-consultarRit",
+            "viewId": "/site/rit/consultarRit.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        },
+        {
+            "pattern": "//rit/establecimientos/#{establecimientosBean.preRender(subseccion)}",
+            "id": "rit-establecimientos",
+            "viewId": "/site/rit/establecimientos.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": ["subseccion)"],
+                "bean": "establecimientosBean"
+            }
+        },
+        {
+            "pattern": "//rit/informacionContribuyente/#{informacionContribuyenteBean.preRender(idForm,idFormTabView,idParcialPanelSubmit,subseccion)}",
+            "id": "rit-informacionContribuyente",
+            "viewId": "/site/rit/informacionContribuyente.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": [
+                    "idForm",
+                    "idFormTabView",
+                    "idParcialPanelSubmit",
+                    "subseccion)"
+                ],
+                "bean": "informacionContribuyenteBean"
+            }
+        },
+        {
+            "pattern": "//rit/informacionContribuyenteComercial/#{informacionContribuyenteComercialBean.preRender(subseccion)}",
+            "id": "rit-informacionContribuyenteComercial",
+            "viewId": "/site/rit/informacionContribuyenteComercial.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": ["subseccion)"],
+                "bean": "informacionContribuyenteComercialBean"
+            }
+        },
+        {
+            "pattern": "//rit/loginRitApertura/#{appConfigMB.plantilla}",
+            "id": "rit-loginRitApertura",
+            "viewId": "/site/rit/loginRitApertura.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        },
+        {
+            "pattern": "//rit/loginRitNovedad/#{appConfigMB.plantilla}",
+            "id": "rit-loginRitNovedad",
+            "viewId": "/site/rit/loginRitNovedad.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        },
+        {
+            "pattern": "//rit/registrarEstablecimiento/#{registrarEstablecimientoBean.preRender(subseccion)}",
+            "id": "rit-registrarEstablecimiento",
+            "viewId": "/site/rit/registrarEstablecimiento.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": ["subseccion)"],
+                "bean": "registrarEstablecimientoBean"
+            }
+        },
+        {
+            "pattern": "//rit/representantes/#{representantesBean.preRender(subseccion)}",
+            "id": "rit-representantes",
+            "viewId": "/site/rit/representantes.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": ["subseccion)"],
+                "bean": "representantesBean"
+            }
+        },
+        {
+            "pattern": "//rit/responsabilidadTributaria/#{responsabilidadTributariaBean.preRender(idForm,idFormTabView,idFormPanelSeccion,subseccion)}",
+            "id": "rit-responsabilidadTributaria",
+            "viewId": "/site/rit/responsabilidadTributaria.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": [
+                    "idForm",
+                    "idFormTabView",
+                    "idFormPanelSeccion",
+                    "subseccion)"
+                ],
+                "bean": "responsabilidadTributariaBean"
+            }
+        },
+        {
+            "pattern": "//rit/tablaRitGuardado/#{loginRitNovedadBean.preRender()}",
+            "id": "rit-tablaRitGuardado",
+            "viewId": "/site/rit/tablaRitGuardado.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": [")"],
+                "bean": "loginRitNovedadBean"
+            }
+        },
+        {
+            "pattern": "//rit/terminosCondiciones/#{informacionContribuyenteBean.boTerminosCondiciones}",
+            "id": "rit-terminosCondiciones",
+            "viewId": "/site/rit/terminosCondiciones.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "boTerminosCondiciones",
+                "params": [],
+                "bean": "informacionContribuyenteBean"
+            }
+        },
+        {
+            "pattern": "//rit/ubicacionContacto/#{ubicacionContactoBean.preRender(subseccion)}",
+            "id": "rit-ubicacionContacto",
+            "viewId": "/site/rit/ubicacionContacto.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "preRender",
+                "params": ["subseccion)"],
+                "bean": "ubicacionContactoBean"
+            }
+        },
+        {
+            "pattern": "//rit/#{appConfigMB.plantilla}",
+            "id": "rit",
+            "viewId": "/site/rit.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        }
+    ],
+    "informacionExogena": [
+        {
+            "pattern": "//informacionExogena/detalleFirmantes/#{detalleFirmantesBean.cargaPreRender(idForm,idModal)}",
+            "id": "informacionExogena-detalleFirmantes",
+            "viewId": "/site/informacionExogena/detalleFirmantes.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "cargaPreRender",
+                "params": [
+                    "idForm",
+                    "idModal)"
+                ],
+                "bean": "detalleFirmantesBean"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalArchivoMost/#{informacionExogenaBean.conteo.intValue()}",
+            "id": "informacionExogena-modalArchivoMost",
+            "viewId": "/site/informacionExogena/modalArchivoMost.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//informacionExogena/modalArchivoMostac/#{informacionExogenaBean.conteo.intValue()}",
+            "id": "informacionExogena-modalArchivoMostac",
+            "viewId": "/site/informacionExogena/modalArchivoMostac.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//informacionExogena/modalBorrar/#{informacionExogenaBean.borrarRegistro2()}",
+            "id": "informacionExogena-modalBorrar",
+            "viewId": "/site/informacionExogena/modalBorrar.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "borrarRegistro2",
+                "params": [],
+                "bean": "informacionExogenaBean"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalConfirm1/#{labels['pagina.infoExog.confirmar']}",
+            "id": "informacionExogena-modalConfirm1",
+            "viewId": "/site/informacionExogena/modalConfirm1.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.infoExog.confirmar"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalConfirm2/#{labels['pagina.infoExog.confirmar']}",
+            "id": "informacionExogena-modalConfirm2",
+            "viewId": "/site/informacionExogena/modalConfirm2.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.infoExog.confirmar"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalConfirm3/#{labels['pagina.infoExog.confirmar']}",
+            "id": "informacionExogena-modalConfirm3",
+            "viewId": "/site/informacionExogena/modalConfirm3.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.infoExog.confirmar"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalDatatableArchivos/#{informacionExogenaBean.gestArchListM}",
+            "id": "informacionExogena-modalDatatableArchivos",
+            "viewId": "/site/informacionExogena/modalDatatableArchivos.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "gestArchListM",
+                "params": [],
+                "bean": "informacionExogenaBean"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalDatatableNota/#{informacionExogenaBean.periodo}",
+            "id": "informacionExogena-modalDatatableNota",
+            "viewId": "/site/informacionExogena/modalDatatableNota.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "periodo",
+                "params": [],
+                "bean": "informacionExogenaBean"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalDatatableNota2/#{labels['pagina.infoExog.mens3soacha']}",
+            "id": "informacionExogena-modalDatatableNota2",
+            "viewId": "/site/informacionExogena/modalDatatableNota2.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.infoExog.mens3soacha"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalDetalleFirmaExog/#{labels['pagina.infoExog.mens3soacha']}",
+            "id": "informacionExogena-modalDetalleFirmaExog",
+            "viewId": "/site/informacionExogena/modalDetalleFirmaExog.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.infoExog.mens3soacha"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalErrores/#{informacionExogenaBean.mensaje}",
+            "id": "informacionExogena-modalErrores",
+            "viewId": "/site/informacionExogena/modalErrores.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "mensaje",
+                "params": [],
+                "bean": "informacionExogenaBean"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalErrorProces/#{informacionExogenaBean.conteo.intValue()}",
+            "id": "informacionExogena-modalErrorProces",
+            "viewId": "/site/informacionExogena/modalErrorProces.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//informacionExogena/modalFileUpload/#{informacionExogenaBean.msgModal}",
+            "id": "informacionExogena-modalFileUpload",
+            "viewId": "/site/informacionExogena/modalFileUpload.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "msgModal",
+                "params": [],
+                "bean": "informacionExogenaBean"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalPresentar/#{labels['pagina.infoExog.confirmar']}",
+            "id": "informacionExogena-modalPresentar",
+            "viewId": "/site/informacionExogena/modalPresentar.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.infoExog.confirmar"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalPresentarExog/#{informacionExogenaBean.presentarInfoExog()}",
+            "id": "informacionExogena-modalPresentarExog",
+            "viewId": "/site/informacionExogena/modalPresentarExog.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "presentarInfoExog",
+                "params": [],
+                "bean": "informacionExogenaBean"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalProcesoEx/#{informacionExogenaBean.msgExito}",
+            "id": "informacionExogena-modalProcesoEx",
+            "viewId": "/site/informacionExogena/modalProcesoEx.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "msgExito",
+                "params": [],
+                "bean": "informacionExogenaBean"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/modalProcesoFinalizado/#{informacionExogenaBean.diffHours}",
+            "id": "informacionExogena-modalProcesoFinalizado",
+            "viewId": "/site/informacionExogena/modalProcesoFinalizado.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "diffHours",
+                "params": [],
+                "bean": "informacionExogenaBean"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/tabCargar/#{titles['pagina.infoexog.text2']}",
+            "id": "informacionExogena-tabCargar",
+            "viewId": "/site/informacionExogena/tabCargar.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.infoexog.text2"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/tabConsultaHistorica/#{titles['pagina.infoExog.paso4']}",
+            "id": "informacionExogena-tabConsultaHistorica",
+            "viewId": "/site/informacionExogena/tabConsultaHistorica.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.infoExog.paso4"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/tabDescargaDiligencia/#{titles['pagina.infoexog.text1']}",
+            "id": "informacionExogena-tabDescargaDiligencia",
+            "viewId": "/site/informacionExogena/tabDescargaDiligencia.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.infoexog.text1"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/tabValidaCorrige/#{titles['pagina.infoexog.text3']}",
+            "id": "informacionExogena-tabValidaCorrige",
+            "viewId": "/site/informacionExogena/tabValidaCorrige.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.infoexog.text3"
+            }
+        },
+        {
+            "pattern": "//informacionExogena/#{appConfigMB.plantilla}",
+            "id": "informacionExogena",
+            "viewId": "/site/informacionExogena.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        }
+    ],
+    "pdfPreview": [{
+        "pattern": "//pdfPreview/#{sessionUsuarioMB.borrarRutaPDF()}",
+        "id": "pdfPreview",
+        "viewId": "/site/pdfPreview.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "borrarRutaPDF",
+            "params": [")"],
+            "bean": "sessionUsuarioMB"
+        }
+    }],
+    "confirmarPago": [{
+        "pattern": "//confirmarPago/#{appConfigMB.plantilla}",
+        "id": "confirmarPago",
+        "viewId": "/site/confirmarPago.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "perfilFirmante": [{
+        "pattern": "//perfilFirmante/#{appConfigMB.plantilla}",
+        "id": "perfilFirmante",
+        "viewId": "/site/perfilFirmante.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "loginV2": [{
+        "pattern": "//loginV2/#{appConfigMB.plantilla}",
+        "id": "loginV2",
+        "viewId": "/site/loginV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "usuarioFirmaElectronica": [{
+        "pattern": "//usuarioFirmaElectronica/#{appConfigMB.plantilla}",
+        "id": "usuarioFirmaElectronica",
+        "viewId": "/site/usuarioFirmaElectronica.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "valiCertificadosCierre": [
+        {
+            "pattern": "//valiCertificadosCierre/listaCertificadoCierre/#{valiCertificadosCierreBean.tipoImpuesto}",
+            "id": "valiCertificadosCierre-listaCertificadoCierre",
+            "viewId": "/site/valiCertificadosCierre/listaCertificadoCierre.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "tipoImpuesto",
+                "params": [],
+                "bean": "valiCertificadosCierreBean"
+            }
+        },
+        {
+            "pattern": "//valiCertificadosCierre/modalCertificadosCierreValido/#{labels['pagina.general.aceptar']}",
+            "id": "valiCertificadosCierre-modalCertificadosCierreValido",
+            "viewId": "/site/valiCertificadosCierre/modalCertificadosCierreValido.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.general.aceptar"
+            }
+        },
+        {
+            "pattern": "//valiCertificadosCierre/#{appConfigMB.plantilla}",
+            "id": "valiCertificadosCierre",
+            "viewId": "/site/valiCertificadosCierre.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        }
+    ],
+    "estadoSolicitudBomberos": [
+        {
+            "pattern": "//estadoSolicitudBomberos/modalOpcionesDePago/#{labels['pagina.facturaexpress.listOppa']}",
+            "id": "estadoSolicitudBomberos-modalOpcionesDePago",
+            "viewId": "/site/estadoSolicitudBomberos/modalOpcionesDePago.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.facturaexpress.listOppa"
+            }
+        },
+        {
+            "pattern": "//estadoSolicitudBomberos/modalTablaSolicitudes/#{tablaSolicitudesBean.mensajeAlertaModal}",
+            "id": "estadoSolicitudBomberos-modalTablaSolicitudes",
+            "viewId": "/site/estadoSolicitudBomberos/modalTablaSolicitudes.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "mensajeAlertaModal",
+                "params": [],
+                "bean": "tablaSolicitudesBean"
+            }
+        },
+        {
+            "pattern": "//estadoSolicitudBomberos/modalTablaSolicitudesBoton/#{tablaSolicitudesBean.mensajeAlertaModal}",
+            "id": "estadoSolicitudBomberos-modalTablaSolicitudesBoton",
+            "viewId": "/site/estadoSolicitudBomberos/modalTablaSolicitudesBoton.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "mensajeAlertaModal",
+                "params": [],
+                "bean": "tablaSolicitudesBean"
+            }
+        },
+        {
+            "pattern": "//estadoSolicitudBomberos/#{appConfigMB.plantilla}",
+            "id": "estadoSolicitudBomberos",
+            "viewId": "/site/estadoSolicitudBomberos.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        }
+    ],
+    "preguntasSeguridadRegistroUsuarioV2": [{
+        "pattern": "//preguntasSeguridadRegistroUsuarioV2/#{registroUsuarioV2Bean.mensajeRespuestasInvalidas}",
+        "id": "preguntasSeguridadRegistroUsuarioV2",
+        "viewId": "/site/preguntasSeguridadRegistroUsuarioV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "mensajeRespuestasInvalidas",
+            "params": [],
+            "bean": "registroUsuarioV2Bean"
+        }
+    }],
+    "descargaArchivos": [{
+        "pattern": "//descargaArchivos/#{appConfigMB.plantilla}",
+        "id": "descargaArchivos",
+        "viewId": "/site/descargaArchivos.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "facturaExpresV2": [{
+        "pattern": "//facturaExpresV2/#{titles['page.facturaexpres.title1']}",
+        "id": "facturaExpresV2",
+        "viewId": "/site/facturaExpresV2.xhtml",
+        "type": "dynamic",
+        "associatedBundle": {
+            "bundle": "titles",
+            "key": "page.facturaexpres.title1"
+        }
+    }],
+    "facturaDelineacion": [{
+        "pattern": "//facturaDelineacion/#{appConfigMB.plantilla}",
+        "id": "facturaDelineacion",
+        "viewId": "/site/facturaDelineacion.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "formularioBomberos": [
+        {
+            "pattern": "//formularioBomberos/modalFormBomberos/#{formularioBomberosBean.mensajeAlertaModal}",
+            "id": "formularioBomberos-modalFormBomberos",
+            "viewId": "/site/formularioBomberos/modalFormBomberos.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "mensajeAlertaModal",
+                "params": [],
+                "bean": "formularioBomberosBean"
+            }
+        },
+        {
+            "pattern": "//formularioBomberos/modalFormCamposFaltantes/#{formularioBomberosBean.mensajeAlertaModal}",
+            "id": "formularioBomberos-modalFormCamposFaltantes",
+            "viewId": "/site/formularioBomberos/modalFormCamposFaltantes.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "mensajeAlertaModal",
+                "params": [],
+                "bean": "formularioBomberosBean"
+            }
+        },
+        {
+            "pattern": "//formularioBomberos/#{appConfigMB.plantilla}",
+            "id": "formularioBomberos",
+            "viewId": "/site/formularioBomberos.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        }
+    ],
+    "tablaFormularioGuardadoV2": [{
+        "pattern": "//tablaFormularioGuardadoV2/#{tablaFormularioGuardadoV2.cargaPreRender(idForm)}",
+        "id": "tablaFormularioGuardadoV2",
+        "viewId": "/site/tablaFormularioGuardadoV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "cargaPreRender",
+            "params": ["idForm)"],
+            "bean": "tablaFormularioGuardadoV2"
+        }
+    }],
+    "notificaciones": [{
+        "pattern": "//notificaciones/#{appConfigMB.plantilla}",
+        "id": "notificaciones",
+        "viewId": "/site/notificaciones.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "habilitaFirmantes": [
+        {
+            "pattern": "//habilitaFirmantes/advertencia/#{labels['pagina.habifirm.alerta']}",
+            "id": "habilitaFirmantes-advertencia",
+            "viewId": "/site/habilitaFirmantes/advertencia.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.habifirm.alerta"
+            }
+        },
+        {
+            "pattern": "//habilitaFirmantes/bloqueo/#{ !habilitaFirmantesBean.termproc                                            and !habilitaFirmantesBean.tercvali                                            and !(habilitaFirmantesBean.getValidacionRIT() eq 'B')}",
+            "id": "habilitaFirmantes-bloqueo",
+            "viewId": "/site/habilitaFirmantes/bloqueo.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//habilitaFirmantes/cancelaproceso/#{titles['pagina.habilitaFirmantes.cancproc']}",
+            "id": "habilitaFirmantes-cancelaproceso",
+            "viewId": "/site/habilitaFirmantes/cancelaproceso.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.habilitaFirmantes.cancproc"
+            }
+        },
+        {
+            "pattern": "//habilitaFirmantes/codigoSeguridad/#{titles['pagina.habilitaFirmantes.paso3']}",
+            "id": "habilitaFirmantes-codigoSeguridad",
+            "viewId": "/site/habilitaFirmantes/codigoSeguridad.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.habilitaFirmantes.paso3"
+            }
+        },
+        {
+            "pattern": "//habilitaFirmantes/documentosAnexos/#{titles['pagina.habilitaFirmantes.paso5']}",
+            "id": "habilitaFirmantes-documentosAnexos",
+            "viewId": "/site/habilitaFirmantes/documentosAnexos.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.habilitaFirmantes.paso5"
+            }
+        },
+        {
+            "pattern": "//habilitaFirmantes/infoFirmantes/#{titles['pagina.habilitaFirmantes.paso4']}",
+            "id": "habilitaFirmantes-infoFirmantes",
+            "viewId": "/site/habilitaFirmantes/infoFirmantes.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.habilitaFirmantes.paso4"
+            }
+        },
+        {
+            "pattern": "//habilitaFirmantes/modalError/#{habilitaFirmantesBean.texterro}",
+            "id": "habilitaFirmantes-modalError",
+            "viewId": "/site/habilitaFirmantes/modalError.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "texterro",
+                "params": [],
+                "bean": "habilitaFirmantesBean"
+            }
+        },
+        {
+            "pattern": "//habilitaFirmantes/preguntasSeguridad/#{titles['pagina.habilitaFirmantes.paso2']}",
+            "id": "habilitaFirmantes-preguntasSeguridad",
+            "viewId": "/site/habilitaFirmantes/preguntasSeguridad.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.habilitaFirmantes.paso2"
+            }
+        },
+        {
+            "pattern": "//habilitaFirmantes/terminaproceso/#{titles['pagina.habilitaFirmantes.termproc']}",
+            "id": "habilitaFirmantes-terminaproceso",
+            "viewId": "/site/habilitaFirmantes/terminaproceso.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.habilitaFirmantes.termproc"
+            }
+        },
+        {
+            "pattern": "//habilitaFirmantes/terminosCondiciones/#{titles['pagina.habilitaFirmantes.paso1']}",
+            "id": "habilitaFirmantes-terminosCondiciones",
+            "viewId": "/site/habilitaFirmantes/terminosCondiciones.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.habilitaFirmantes.paso1"
+            }
+        },
+        {
+            "pattern": "//habilitaFirmantes/#{habilitaFirmantesBean.tercvali and !(habilitaFirmantesBean.getValidacionRIT() eq 'B')}",
+            "id": "habilitaFirmantes",
+            "viewId": "/site/habilitaFirmantes.xhtml",
+            "type": "dynamic"
+        }
+    ],
+    "opcionesModuloBomberos": [{
+        "pattern": "//opcionesModuloBomberos/#{appConfigMB.plantilla}",
+        "id": "opcionesModuloBomberos",
+        "viewId": "/site/opcionesModuloBomberos.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "perfilUsuarioValorizacion": [{
+        "pattern": "//perfilUsuarioValorizacion/#{appConfigMB.plantilla}",
+        "id": "perfilUsuarioValorizacion",
+        "viewId": "/site/perfilUsuarioValorizacion.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "recordarContrasenaValorizacion": [{
+        "pattern": "//recordarContrasenaValorizacion/#{titles['pagina.recordarcontrasena.title1']}",
+        "id": "recordarContrasenaValorizacion",
+        "viewId": "/site/recordarContrasenaValorizacion.xhtml",
+        "type": "dynamic",
+        "associatedBundle": {
+            "bundle": "titles",
+            "key": "pagina.recordarcontrasena.title1"
+        }
+    }],
+    "firmaDeclaracion": [
+        {
+            "pattern": "//firmaDeclaracion/contenidoEnviaCodigo/#{labels['pagina.firmelec.texto1']}",
+            "id": "firmaDeclaracion-contenidoEnviaCodigo",
+            "viewId": "/site/firmaDeclaracion/contenidoEnviaCodigo.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.firmelec.texto1"
+            }
+        },
+        {
+            "pattern": "//firmaDeclaracion/contenidoIdFirma/#{firmaDeclaracionBean.idfirma != null}",
+            "id": "firmaDeclaracion-contenidoIdFirma",
+            "viewId": "/site/firmaDeclaracion/contenidoIdFirma.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//firmaDeclaracion/modalFirmar/#{labels['pagina.firmelec.codivali.texto']}",
+            "id": "firmaDeclaracion-modalFirmar",
+            "viewId": "/site/firmaDeclaracion/modalFirmar.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.firmelec.codivali.texto"
+            }
+        },
+        {
+            "pattern": "//firmaDeclaracion/modalFormularioCodivali/#{labels['pagina.firmelec.modal.texto']}",
+            "id": "firmaDeclaracion-modalFormularioCodivali",
+            "viewId": "/site/firmaDeclaracion/modalFormularioCodivali.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.firmelec.modal.texto"
+            }
+        },
+        {
+            "pattern": "//firmaDeclaracion/modalInfoInicial/#{ (firmaDeclaracionBean.valifechvenci or properties['valida.fechavencimiento'] eq 'N') and !firmaDeclaracionBean.valiclasterc  }",
+            "id": "firmaDeclaracion-modalInfoInicial",
+            "viewId": "/site/firmaDeclaracion/modalInfoInicial.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//firmaDeclaracion/modalPresentarDecl/#{labels['pagina.presdecl.titulo']}",
+            "id": "firmaDeclaracion-modalPresentarDecl",
+            "viewId": "/site/firmaDeclaracion/modalPresentarDecl.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.presdecl.titulo"
+            }
+        },
+        {
+            "pattern": "//firmaDeclaracion/#{appConfigMB.plantilla}",
+            "id": "firmaDeclaracion",
+            "viewId": "/site/firmaDeclaracion.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        }
+    ],
+    "valiCertificadosBomberos": [
+        {
+            "pattern": "//valiCertificadosBomberos/listaCertificadoBomberos/#{valiCertificadosBomberosBean.tipoImpuesto}",
+            "id": "valiCertificadosBomberos-listaCertificadoBomberos",
+            "viewId": "/site/valiCertificadosBomberos/listaCertificadoBomberos.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "tipoImpuesto",
+                "params": [],
+                "bean": "valiCertificadosBomberosBean"
+            }
+        },
+        {
+            "pattern": "//valiCertificadosBomberos/modalCertificadosBomberosValido/#{labels['pagina.general.aceptar']}",
+            "id": "valiCertificadosBomberos-modalCertificadosBomberosValido",
+            "viewId": "/site/valiCertificadosBomberos/modalCertificadosBomberosValido.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.general.aceptar"
+            }
+        },
+        {
+            "pattern": "//valiCertificadosBomberos/#{appConfigMB.plantilla}",
+            "id": "valiCertificadosBomberos",
+            "viewId": "/site/valiCertificadosBomberos.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        }
+    ],
+    "certificadoPazySalvoValorizacion": [{
+        "pattern": "//certificadoPazySalvoValorizacion/#{titles['page.certificado.titulo']}",
+        "id": "certificadoPazySalvoValorizacion",
+        "viewId": "/site/certificadoPazySalvoValorizacion.xhtml",
+        "type": "dynamic",
+        "associatedBundle": {
+            "bundle": "titles",
+            "key": "page.certificado.titulo"
+        }
+    }],
+    "solicitudPropietarioPredioAnexos": [{
+        "pattern": "//solicitudPropietarioPredioAnexos/#{solicitudPropietarioPredioAnexosBean.titulo}",
+        "id": "solicitudPropietarioPredioAnexos",
+        "viewId": "/site/solicitudPropietarioPredioAnexos.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "titulo",
+            "params": [],
+            "bean": "solicitudPropietarioPredioAnexosBean"
+        }
+    }],
+    "censoValorizacion": [
+        {
+            "pattern": "//censoValorizacion/modalAnexosFodecamp/#{censoValorizacionBean.fodecampSeleccionado.focaanex}",
+            "id": "censoValorizacion-modalAnexosFodecamp",
+            "viewId": "/site/censoValorizacion/modalAnexosFodecamp.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//censoValorizacion/modalAnexosFodecampPredio/#{censoValorizacionPrediosBean.fodecampSeleccionado.focaanex}",
+            "id": "censoValorizacion-modalAnexosFodecampPredio",
+            "viewId": "/site/censoValorizacion/modalAnexosFodecampPredio.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//censoValorizacion/modalFocaobse/#{censoValorizacionBean.fodecampSeleccionado.focaetiq}",
+            "id": "censoValorizacion-modalFocaobse",
+            "viewId": "/site/censoValorizacion/modalFocaobse.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//censoValorizacion/modalFocaobsePredio/#{censoValorizacionPrediosBean.fodecampSeleccionado.focaetiq}",
+            "id": "censoValorizacion-modalFocaobsePredio",
+            "viewId": "/site/censoValorizacion/modalFocaobsePredio.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//censoValorizacion/modalLiquidacionPreliminar/#{ censoValorizacionPrediosBean.detalleLiquidacion.get(0) }",
+            "id": "censoValorizacion-modalLiquidacionPreliminar",
+            "viewId": "/site/censoValorizacion/modalLiquidacionPreliminar.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//censoValorizacion/#{censoValorizacionBean.cargaPreRender('')}",
+            "id": "censoValorizacion",
+            "viewId": "/site/censoValorizacion.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "cargaPreRender",
+                "params": ["'')"],
+                "bean": "censoValorizacionBean"
+            }
+        }
+    ],
+    "registroUsuarioV2": [{
+        "pattern": "//registroUsuarioV2/#{appConfigMB.plantilla}",
+        "id": "registroUsuarioV2",
+        "viewId": "/site/registroUsuarioV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "formPredioVisorGeografico": [{
+        "pattern": "//formPredioVisorGeografico/#{request.contextPath}",
+        "id": "formPredioVisorGeografico",
+        "viewId": "/site/formPredioVisorGeografico.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "contextPath",
+            "params": [],
+            "bean": "request"
+        }
+    }],
+    "recordarContrasenaV2": [{
+        "pattern": "//recordarContrasenaV2/#{appConfigMB.plantilla}",
+        "id": "recordarContrasenaV2",
+        "viewId": "/site/recordarContrasenaV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "acuerdoFirmaElectronica": [
+        {
+            "pattern": "//acuerdoFirmaElectronica/advertencia/#{labels['pagina.acuerdofirma.alerta2']}",
+            "id": "acuerdoFirmaElectronica-advertencia",
+            "viewId": "/site/acuerdoFirmaElectronica/advertencia.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "labels",
+                "key": "pagina.acuerdofirma.alerta2"
+            }
+        },
+        {
+            "pattern": "//acuerdoFirmaElectronica/bloqueo/#{ !acuerdoFirmaElectronicaBean.tercvali }",
+            "id": "acuerdoFirmaElectronica-bloqueo",
+            "viewId": "/site/acuerdoFirmaElectronica/bloqueo.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//acuerdoFirmaElectronica/codigoSeguridad/#{titles['pagina.acuerdofirma.paso3']}",
+            "id": "acuerdoFirmaElectronica-codigoSeguridad",
+            "viewId": "/site/acuerdoFirmaElectronica/codigoSeguridad.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.acuerdofirma.paso3"
+            }
+        },
+        {
+            "pattern": "//acuerdoFirmaElectronica/descargaArchivo/#{titles['pagina.acuerdofirma.paso4']}",
+            "id": "acuerdoFirmaElectronica-descargaArchivo",
+            "viewId": "/site/acuerdoFirmaElectronica/descargaArchivo.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.acuerdofirma.paso4"
+            }
+        },
+        {
+            "pattern": "//acuerdoFirmaElectronica/informacionTercero/#{titles['pagina.acuerdofirma.paso2']}",
+            "id": "acuerdoFirmaElectronica-informacionTercero",
+            "viewId": "/site/acuerdoFirmaElectronica/informacionTercero.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.acuerdofirma.paso2"
+            }
+        },
+        {
+            "pattern": "//acuerdoFirmaElectronica/modalError/#{acuerdoFirmaElectronicaBean.texterro}",
+            "id": "acuerdoFirmaElectronica-modalError",
+            "viewId": "/site/acuerdoFirmaElectronica/modalError.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "texterro",
+                "params": [],
+                "bean": "acuerdoFirmaElectronicaBean"
+            }
+        },
+        {
+            "pattern": "//acuerdoFirmaElectronica/terminosCondiciones/#{titles['pagina.acuerdofirma.paso1']}",
+            "id": "acuerdoFirmaElectronica-terminosCondiciones",
+            "viewId": "/site/acuerdoFirmaElectronica/terminosCondiciones.xhtml",
+            "type": "dynamic",
+            "associatedBundle": {
+                "bundle": "titles",
+                "key": "pagina.acuerdofirma.paso1"
+            }
+        },
+        {
+            "pattern": "//acuerdoFirmaElectronica/#{appConfigMB.plantilla}",
+            "id": "acuerdoFirmaElectronica",
+            "viewId": "/site/acuerdoFirmaElectronica.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "plantilla",
+                "params": [],
+                "bean": "appConfigMB"
+            }
+        }
+    ],
+    "formularioPago": [{
+        "pattern": "//formularioPago/#{appConfigMB.plantilla}",
+        "id": "formularioPago",
+        "viewId": "/site/formularioPago.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "informacionExogenaTemp": [{
+        "pattern": "//informacionExogenaTemp/#{appConfigMB.plantilla}",
+        "id": "informacionExogenaTemp",
+        "viewId": "/site/informacionExogenaTemp.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "encabezadoFormularioDeclaracionV2": [{
+        "pattern": "//encabezadoFormularioDeclaracionV2/#{encabezadoFormularioDeclaracionV2.cargaPreRender(idForm)}",
+        "id": "encabezadoFormularioDeclaracionV2",
+        "viewId": "/site/encabezadoFormularioDeclaracionV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "cargaPreRender",
+            "params": ["idForm)"],
+            "bean": "encabezadoFormularioDeclaracionV2"
+        }
+    }],
+    "cambioClaveValorizacion": [{
+        "pattern": "//cambioClaveValorizacion/#{appConfigMB.plantilla}",
+        "id": "cambioClaveValorizacion",
+        "viewId": "/site/cambioClaveValorizacion.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "solicitudPropietarioPredio": [{
+        "pattern": "//solicitudPropietarioPredio/#{solicitudPropietarioPredioBean.cargaPreRender('')}",
+        "id": "solicitudPropietarioPredio",
+        "viewId": "/site/solicitudPropietarioPredio.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "cargaPreRender",
+            "params": ["'')"],
+            "bean": "solicitudPropietarioPredioBean"
+        }
+    }],
+    "acuerdoPago": [{
+        "pattern": "//acuerdoPago/#{appConfigMB.plantilla}",
+        "id": "acuerdoPago",
+        "viewId": "/site/acuerdoPago.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "formulariosPago": [
+        {
+            "pattern": "//formulariosPago/camposEcollect/#{formularioPagoBean.campospago.tidodesc}",
+            "id": "formulariosPago-camposEcollect",
+            "viewId": "/site/formulariosPago/camposEcollect.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//formulariosPago/camposPayulatam/#{request.contextPath}",
+            "id": "formulariosPago-camposPayulatam",
+            "viewId": "/site/formulariosPago/camposPayulatam.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "contextPath",
+                "params": [],
+                "bean": "request"
+            }
+        },
+        {
+            "pattern": "//formulariosPago/resumenEcollect/#{resumenPagoBean.campospago.estado}",
+            "id": "formulariosPago-resumenEcollect",
+            "viewId": "/site/formulariosPago/resumenEcollect.xhtml",
+            "type": "dynamic"
+        },
+        {
+            "pattern": "//formulariosPago/resumenPagoPayulatam/#{resumenPagoBean.obtenerValor('reference_pol')}",
+            "id": "formulariosPago-resumenPagoPayulatam",
+            "viewId": "/site/formulariosPago/resumenPagoPayulatam.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "obtenerValor",
+                "params": ["'reference_pol')"],
+                "bean": "resumenPagoBean"
+            }
+        }
+    ],
+    "formularioDeclaracionV2": [{
+        "pattern": "//formularioDeclaracionV2/#{appConfigMB.plantilla}",
+        "id": "formularioDeclaracionV2",
+        "viewId": "/site/formularioDeclaracionV2.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "facturaExpres": [{
+        "pattern": "//facturaExpres/#{appConfigMB.plantilla}",
+        "id": "facturaExpres",
+        "viewId": "/site/facturaExpres.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "plantilla",
+            "params": [],
+            "bean": "appConfigMB"
+        }
+    }],
+    "tablaSolicitudes": [{
+        "pattern": "//tablaSolicitudes/#{tablaSolicitudesBean.cargaPreRender(idForm)}",
+        "id": "tablaSolicitudes",
+        "viewId": "/site/tablaSolicitudes.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "cargaPreRender",
+            "params": ["idForm)"],
+            "bean": "tablaSolicitudesBean"
+        }
+    }],
+    "loadPage": [{
+        "pattern": "//loadPage/#{request.contextPath}",
+        "id": "loadPage",
+        "viewId": "/site/loadPage.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "contextPath",
+            "params": [],
+            "bean": "request"
+        }
+    }],
+    "home": [{
+        "pattern": "//home/#{request.contextPath}",
+        "id": "home",
+        "viewId": "/site/home.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "contextPath",
+            "params": [],
+            "bean": "request"
+        }
+    }],
+    "visorGeograficoInvias": [{
+        "pattern": "//visorGeograficoInvias/#{request.contextPath}",
+        "id": "visorGeograficoInvias",
+        "viewId": "/site/visorGeograficoInvias.xhtml",
+        "type": "dynamic",
+        "associatedBean": {
+            "method": "contextPath",
+            "params": [],
+            "bean": "request"
+        }
+    }],
+    "diligenciamiento": [
+        {
+            "pattern": "//diligenciamiento/actividadesEconomicas/#{actividadesEconomicasBean.cargaPreRender(idForm)}",
+            "id": "diligenciamiento-actividadesEconomicas",
+            "viewId": "/site/diligenciamiento/actividadesEconomicas.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "cargaPreRender",
+                "params": ["idForm)"],
+                "bean": "actividadesEconomicasBean"
+            }
+        },
+        {
+            "pattern": "//diligenciamiento/presentaDeclaracionV2/#{presentaDeclaracionV2Bean.cargaPreRender(idForm,idModal)}",
+            "id": "diligenciamiento-presentaDeclaracionV2",
+            "viewId": "/site/diligenciamiento/presentaDeclaracionV2.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "cargaPreRender",
+                "params": [
+                    "idForm",
+                    "idModal)"
+                ],
+                "bean": "presentaDeclaracionV2Bean"
+            }
+        },
+        {
+            "pattern": "//diligenciamiento/renglonesDiliV2/#{renglonesDiliV2Bean.cargaPreRender(idForm,idSeccion,idBodyModal)}",
+            "id": "diligenciamiento-renglonesDiliV2",
+            "viewId": "/site/diligenciamiento/renglonesDiliV2.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "cargaPreRender",
+                "params": [
+                    "idForm",
+                    "idSeccion",
+                    "idBodyModal)"
+                ],
+                "bean": "renglonesDiliV2Bean"
+            }
+        },
+        {
+            "pattern": "//diligenciamiento/tablaRepresentantes/#{tablaRepresentantesBean.cargaPreRender(idForm)}",
+            "id": "diligenciamiento-tablaRepresentantes",
+            "viewId": "/site/diligenciamiento/tablaRepresentantes.xhtml",
+            "type": "dynamic",
+            "associatedBean": {
+                "method": "cargaPreRender",
+                "params": ["idForm)"],
+                "bean": "tablaRepresentantesBean"
+            }
+        }
+    ]
+}]

@@ -1,0 +1,24 @@
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+skinparam classFontSize 12
+skinparam backgroundColor white
+
+class AceclapsFacade {
+  ~ {static} log : org.apache.logging.log4j.Logger
+  - em : EntityManager
+  --
+  + AceclapsFacade()
+  # getEntityManager() : EntityManager
+  + init() : void
+  + fun_max_aceclaps_acecenex_peri(param: String) : Aceclaps
+  + cargaCampoSelectTipoActiEstaAcec(tipoSujeto: String, sujeto: String, sbPeriodo: String, sbLapso: String) : List<CampoSelect>
+  + getAcecLapsCiiu(periodo: String, lapso: String, tipoActividad: String, actividad: String, ciiu: String) : Aceclaps
+  + getEm() : EntityManager
+  + setEm(em: EntityManager) : void
+}
+
+AceclapsFacade --|> AbstractFacade
+AceclapsFacade ..|> AceclapsFacadeLocal
+
+@enduml

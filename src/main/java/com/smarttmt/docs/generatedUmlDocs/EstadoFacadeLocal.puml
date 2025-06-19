@@ -1,0 +1,18 @@
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+skinparam classFontSize 12
+skinparam backgroundColor white
+
+interface EstadoFacadeLocal {
+  ~ create(estado: Estado) : void
+  ~ edit(estado: Estado) : void
+  ~ remove(estado: Estado) : void
+  ~ find(id: Object) : Estado
+  ~ findAll() : List<Estado>
+  ~ findRange(range: int[]) : List<Estado>
+  ~ count() : int
+}
+
+
+@enduml

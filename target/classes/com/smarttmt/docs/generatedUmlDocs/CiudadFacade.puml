@@ -1,0 +1,17 @@
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+skinparam classFontSize 12
+skinparam backgroundColor white
+
+class CiudadFacade {
+  - em : EntityManager
+  --
+  + CiudadFacade()
+  # getEntityManager() : EntityManager
+}
+
+CiudadFacade --|> AbstractFacade
+CiudadFacade ..|> CiudadFacadeLocal
+
+@enduml

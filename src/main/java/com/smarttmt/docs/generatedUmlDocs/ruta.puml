@@ -1,0 +1,12 @@
+@startuml
+skinparam defaultTextAlignment center
+
+start
+
+:/home/
+--> "/pages/home.xhtml"
+
+:/user/{username}/"
+--> "/pages/user/profile.xhtml" : #{userBean.loadUser}
+
+@enduml
