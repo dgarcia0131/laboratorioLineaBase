@@ -1,0 +1,21 @@
+@startuml
+
+package "declaracionesActividadTemporal" {
+  [contenidoEnviaCodigo]
+  [contenidoIdFirma]
+  [diligencieDeclaracionV2]
+  [encabezadoFormularioDeclaracionV2]
+  [firmaDeclaracion]
+  [formularioDeclaracionV2]
+  [modalFirmar]
+  [modalFormularioCodivali]
+  [modalInfoInicial]
+  [modalPresentarDecl]
+  [otrasDeclaraciones]
+}
+
+[firmaDeclaracion] --> [diligencieDeclaracionV2]
+[formularioDeclaracionV2] --> [diligencieDeclaracionV2]
+[otrasDeclaraciones] --> [diligencieDeclaracionV2]
+
+@enduml

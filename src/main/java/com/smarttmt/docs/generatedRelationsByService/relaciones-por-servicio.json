@@ -1,0 +1,571 @@
+{
+    "declaracionesActividadTemporal": [
+        {
+            "from": "contenidoEnviaCodigo",
+            "to": "contenidoIdFirma",
+            "label": "continuar"
+        },
+        {
+            "from": "contenidoIdFirma",
+            "to": "diligencieDeclaracionV2",
+            "label": "continuar"
+        },
+        {
+            "from": "diligencieDeclaracionV2",
+            "to": "encabezadoFormularioDeclaracionV2",
+            "label": "continuar"
+        },
+        {
+            "from": "encabezadoFormularioDeclaracionV2",
+            "to": "firmaDeclaracion",
+            "label": "continuar"
+        },
+        {
+            "from": "firmaDeclaracion",
+            "to": "formularioDeclaracionV2",
+            "label": "continuar"
+        },
+        {
+            "from": "formularioDeclaracionV2",
+            "to": "modalFirmar",
+            "label": "firmar"
+        },
+        {
+            "from": "modalFirmar",
+            "to": "modalFormularioCodivali",
+            "label": "continuar"
+        },
+        {
+            "from": "modalFormularioCodivali",
+            "to": "modalInfoInicial",
+            "label": "continuar"
+        },
+        {
+            "from": "modalInfoInicial",
+            "to": "modalPresentarDecl",
+            "label": "continuar"
+        },
+        {
+            "from": "modalPresentarDecl",
+            "to": "otrasDeclaraciones",
+            "label": "continuar"
+        }
+    ],
+    "delineacionUrbana": [],
+    "perfilUsuario": [],
+    "validacionPazYsalvo": [
+        {
+            "from": "modalCertificado",
+            "to": "modalCertificadoInvias",
+            "label": "continuar"
+        },
+        {
+            "from": "modalCertificadoInvias",
+            "to": "modalQr",
+            "label": "continuar"
+        },
+        {
+            "from": "modalQr",
+            "to": "validacionPazySalvoV2",
+            "label": "continuar"
+        }
+    ],
+    "estadoCuenta": [],
+    "diligenciarDeclaraciones": [
+        {
+            "from": "actividadesEconomicas",
+            "to": "presentaDeclaracionV2",
+            "label": "continuar"
+        },
+        {
+            "from": "presentaDeclaracionV2",
+            "to": "renglonesDiliV2",
+            "label": "continuar"
+        },
+        {
+            "from": "renglonesDiliV2",
+            "to": "tablaListadoDeolestaV2",
+            "label": "continuar"
+        },
+        {
+            "from": "tablaListadoDeolestaV2",
+            "to": "tablaRepresentantes",
+            "label": "continuar"
+        }
+    ],
+    "gestionFacturas": [
+        {
+            "from": "facturaDelineacion",
+            "to": "facturaExpres",
+            "label": "continuar"
+        },
+        {
+            "from": "facturaExpres",
+            "to": "facturaExpresV2",
+            "label": "continuar"
+        },
+        {
+            "from": "facturaExpresV2",
+            "to": "facturaExpresValorizacion",
+            "label": "continuar"
+        }
+    ],
+    "registroUsuario": [
+        {
+            "from": "perfilUsuarioValorizacion",
+            "to": "preguntasSeguridadRegistroUsuarioV2",
+            "label": "continuar"
+        },
+        {
+            "from": "preguntasSeguridadRegistroUsuarioV2",
+            "to": "registroUsuarioBienvenidoV2",
+            "label": "continuar"
+        },
+        {
+            "from": "registroUsuarioBienvenidoV2",
+            "to": "registroUsuarioExitosoV2",
+            "label": "continuar"
+        },
+        {
+            "from": "registroUsuarioExitosoV2",
+            "to": "registroUsuarioV2",
+            "label": "continuar"
+        },
+        {
+            "from": "registroUsuarioV2",
+            "to": "registroUsuarioValidaDocumentoV2",
+            "label": "continuar"
+        },
+        {
+            "from": "registroUsuarioValidaDocumentoV2",
+            "to": "usuarioFirmaElectronica",
+            "label": "continuar"
+        }
+    ],
+    "gestionPago": [
+        {
+            "from": "confirmarPago",
+            "to": "formularioPago",
+            "label": "continuar"
+        },
+        {
+            "from": "formularioPago",
+            "to": "resumenPago",
+            "label": "continuar"
+        }
+    ],
+    "cerificadoBomberos": [
+        {
+            "from": "estadoSolicitudBomberos",
+            "to": "formularioBomberos",
+            "label": "continuar"
+        },
+        {
+            "from": "formularioBomberos",
+            "to": "listaCertificadoBomberos",
+            "label": "continuar"
+        },
+        {
+            "from": "listaCertificadoBomberos",
+            "to": "modalCertificadosBomberosValido",
+            "label": "continuar"
+        },
+        {
+            "from": "modalCertificadosBomberosValido",
+            "to": "modalFormBomberos",
+            "label": "continuar"
+        },
+        {
+            "from": "modalFormBomberos",
+            "to": "modalFormCamposFaltantes",
+            "label": "continuar"
+        },
+        {
+            "from": "modalFormCamposFaltantes",
+            "to": "modalOpcionesDePago",
+            "label": "continuar"
+        },
+        {
+            "from": "modalOpcionesDePago",
+            "to": "modalTablaSolicitudes",
+            "label": "continuar"
+        },
+        {
+            "from": "modalTablaSolicitudes",
+            "to": "modalTablaSolicitudesBoton",
+            "label": "continuar"
+        },
+        {
+            "from": "modalTablaSolicitudesBoton",
+            "to": "opcionesModuloBomberos",
+            "label": "continuar"
+        },
+        {
+            "from": "opcionesModuloBomberos",
+            "to": "tablaSolicitudes",
+            "label": "continuar"
+        },
+        {
+            "from": "tablaSolicitudes",
+            "to": "valiCertificadosBomberos",
+            "label": "continuar"
+        }
+    ],
+    "componentesGlobales": [
+        {
+            "from": "home",
+            "to": "loadPage",
+            "label": "continuar"
+        },
+        {
+            "from": "loadPage",
+            "to": "loginV2",
+            "label": "continuar"
+        },
+        {
+            "from": "loginV2",
+            "to": "pdfPreview",
+            "label": "continuar"
+        }
+    ],
+    "informacionTributaria": [],
+    "certificadoPazYsalvo": [
+        {
+            "from": "certificadoPazySalvo",
+            "to": "certificadoPazySalvoValorizacion",
+            "label": "continuar"
+        },
+        {
+            "from": "certificadoPazySalvoValorizacion",
+            "to": "listaCertificado",
+            "label": "continuar"
+        }
+    ],
+    "AcuerdoFirmaElectronica": [
+        {
+            "from": "acuerdoFirmaElectronica",
+            "to": "advertencia",
+            "label": "continuar"
+        },
+        {
+            "from": "advertencia",
+            "to": "advertencia",
+            "label": "continuar"
+        },
+        {
+            "from": "advertencia",
+            "to": "bloqueo",
+            "label": "continuar"
+        },
+        {
+            "from": "bloqueo",
+            "to": "bloqueo",
+            "label": "continuar"
+        },
+        {
+            "from": "bloqueo",
+            "to": "cancelaproceso",
+            "label": "continuar"
+        },
+        {
+            "from": "cancelaproceso",
+            "to": "codigoSeguridad",
+            "label": "continuar"
+        },
+        {
+            "from": "codigoSeguridad",
+            "to": "codigoSeguridad",
+            "label": "continuar"
+        },
+        {
+            "from": "codigoSeguridad",
+            "to": "descargaArchivo",
+            "label": "continuar"
+        },
+        {
+            "from": "descargaArchivo",
+            "to": "detalleFirmantes",
+            "label": "continuar"
+        },
+        {
+            "from": "detalleFirmantes",
+            "to": "documentosAnexos",
+            "label": "continuar"
+        },
+        {
+            "from": "documentosAnexos",
+            "to": "formularioRepresentante",
+            "label": "continuar"
+        },
+        {
+            "from": "formularioRepresentante",
+            "to": "gestionFirmantes",
+            "label": "continuar"
+        },
+        {
+            "from": "gestionFirmantes",
+            "to": "habilitaFirmantes",
+            "label": "continuar"
+        },
+        {
+            "from": "habilitaFirmantes",
+            "to": "infoFirmantes",
+            "label": "continuar"
+        },
+        {
+            "from": "infoFirmantes",
+            "to": "informacionTercero",
+            "label": "continuar"
+        },
+        {
+            "from": "informacionTercero",
+            "to": "modalConfirmacion",
+            "label": "continuar"
+        },
+        {
+            "from": "modalConfirmacion",
+            "to": "modalError",
+            "label": "continuar"
+        },
+        {
+            "from": "modalError",
+            "to": "modalError",
+            "label": "continuar"
+        },
+        {
+            "from": "modalError",
+            "to": "notificaciones",
+            "label": "continuar"
+        },
+        {
+            "from": "notificaciones",
+            "to": "perfilFirmante",
+            "label": "continuar"
+        },
+        {
+            "from": "perfilFirmante",
+            "to": "preguntasSeguridad",
+            "label": "continuar"
+        },
+        {
+            "from": "preguntasSeguridad",
+            "to": "terminaproceso",
+            "label": "continuar"
+        },
+        {
+            "from": "terminaproceso",
+            "to": "terminosCondiciones",
+            "label": "continuar"
+        },
+        {
+            "from": "terminosCondiciones",
+            "to": "terminosCondiciones",
+            "label": "continuar"
+        }
+    ],
+    "acuerdoPago": [],
+    "rit": [
+        {
+            "from": "actividadesEconomicasRit",
+            "to": "actividadesEstablecimiento",
+            "label": "continuar"
+        },
+        {
+            "from": "actividadesEstablecimiento",
+            "to": "anexos",
+            "label": "continuar"
+        },
+        {
+            "from": "anexos",
+            "to": "cerrarEstablecimientos",
+            "label": "continuar"
+        },
+        {
+            "from": "cerrarEstablecimientos",
+            "to": "consultarRit",
+            "label": "consultar"
+        },
+        {
+            "from": "consultarRit",
+            "to": "establecimientos",
+            "label": "continuar"
+        },
+        {
+            "from": "establecimientos",
+            "to": "informacionContribuyente",
+            "label": "continuar"
+        },
+        {
+            "from": "informacionContribuyente",
+            "to": "informacionContribuyenteComercial",
+            "label": "continuar"
+        },
+        {
+            "from": "informacionContribuyenteComercial",
+            "to": "loginRitApertura",
+            "label": "continuar"
+        },
+        {
+            "from": "loginRitApertura",
+            "to": "loginRitNovedad",
+            "label": "continuar"
+        },
+        {
+            "from": "loginRitNovedad",
+            "to": "registrarEstablecimiento",
+            "label": "registrar"
+        },
+        {
+            "from": "registrarEstablecimiento",
+            "to": "representantes",
+            "label": "continuar"
+        },
+        {
+            "from": "representantes",
+            "to": "responsabilidadTributaria",
+            "label": "continuar"
+        },
+        {
+            "from": "responsabilidadTributaria",
+            "to": "rit",
+            "label": "continuar"
+        },
+        {
+            "from": "rit",
+            "to": "tablaFormularioGuardadoV2",
+            "label": "continuar"
+        },
+        {
+            "from": "tablaFormularioGuardadoV2",
+            "to": "tablaRitGuardado",
+            "label": "continuar"
+        },
+        {
+            "from": "tablaRitGuardado",
+            "to": "terminosCondiciones",
+            "label": "continuar"
+        },
+        {
+            "from": "terminosCondiciones",
+            "to": "ubicacionContacto",
+            "label": "continuar"
+        }
+    ],
+    "informacionExogena": [
+        {
+            "from": "detalleFirmantes",
+            "to": "informacionExogena",
+            "label": "continuar"
+        },
+        {
+            "from": "informacionExogena",
+            "to": "informacionExogenaTemp",
+            "label": "continuar"
+        },
+        {
+            "from": "informacionExogenaTemp",
+            "to": "modalArchivoMost",
+            "label": "continuar"
+        },
+        {
+            "from": "modalArchivoMost",
+            "to": "modalArchivoMostac",
+            "label": "continuar"
+        },
+        {
+            "from": "modalArchivoMostac",
+            "to": "modalBorrar",
+            "label": "continuar"
+        },
+        {
+            "from": "modalBorrar",
+            "to": "modalConfirm1",
+            "label": "continuar"
+        },
+        {
+            "from": "modalConfirm1",
+            "to": "modalConfirm2",
+            "label": "continuar"
+        },
+        {
+            "from": "modalConfirm2",
+            "to": "modalConfirm3",
+            "label": "continuar"
+        },
+        {
+            "from": "modalConfirm3",
+            "to": "modalDatatableArchivos",
+            "label": "continuar"
+        },
+        {
+            "from": "modalDatatableArchivos",
+            "to": "modalDatatableNota",
+            "label": "continuar"
+        },
+        {
+            "from": "modalDatatableNota",
+            "to": "modalDatatableNota2",
+            "label": "continuar"
+        },
+        {
+            "from": "modalDatatableNota2",
+            "to": "modalDetalleFirmaExog",
+            "label": "continuar"
+        },
+        {
+            "from": "modalDetalleFirmaExog",
+            "to": "modalErrorProces",
+            "label": "continuar"
+        },
+        {
+            "from": "modalErrorProces",
+            "to": "modalErrores",
+            "label": "continuar"
+        },
+        {
+            "from": "modalErrores",
+            "to": "modalFileUpload",
+            "label": "continuar"
+        },
+        {
+            "from": "modalFileUpload",
+            "to": "modalPresentar",
+            "label": "continuar"
+        },
+        {
+            "from": "modalPresentar",
+            "to": "modalPresentarExog",
+            "label": "continuar"
+        },
+        {
+            "from": "modalPresentarExog",
+            "to": "modalProcesoEx",
+            "label": "continuar"
+        },
+        {
+            "from": "modalProcesoEx",
+            "to": "modalProcesoFinalizado",
+            "label": "continuar"
+        },
+        {
+            "from": "modalProcesoFinalizado",
+            "to": "tabCargar",
+            "label": "cargar"
+        },
+        {
+            "from": "tabCargar",
+            "to": "tabConsultaHistorica",
+            "label": "continuar"
+        },
+        {
+            "from": "tabConsultaHistorica",
+            "to": "tabDescargaDiligencia",
+            "label": "continuar"
+        },
+        {
+            "from": "tabDescargaDiligencia",
+            "to": "tabValidaCorrige",
+            "label": "continuar"
+        }
+    ]
+}

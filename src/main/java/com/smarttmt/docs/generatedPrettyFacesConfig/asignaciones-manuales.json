@@ -1,0 +1,97 @@
+{
+    "modulosSinServicio": {
+        "tablaListadoDeolestaV2":"diligenciarDeclaraciones",
+        "solicitudPropietarioPredioAnexos": null,
+        "censoValorizacion": null,
+        "estadoCuentaValorizacion": "estadoCuenta",
+        "formPredioVisorGeografico": null,
+        "recordarContrasenaV2": "perfilUsuario",
+        "formularioRepresentante": null,
+        "formularioPago": "gestionPago",
+        "certificadoCierreEstablecimiento": null,
+        "listaCertificado": "certificadoPazYsalvo",
+        "resumenPago": "gestionPago",
+        "cambioClaveValorizacion": null,
+        "solicitudPropietarioPredio": null,
+        "acuerdoPago": "acuerdoPago",
+        "pdfPreview": "componentesGlobales",
+        "confirmarPago": "gestionPago",
+        "loginV2": "componentesGlobales",
+        "tablaSolicitudes": "cerificadoBomberos",
+        "valiCertificadosCierre": null,
+        "loadPage": "componentesGlobales",
+        "home": "componentesGlobales",
+        "visorGeograficoInvias": null,
+        "tablaFormularioGuardadoV2": "rit",
+        "notificaciones": "AcuerdoFirmaElectronica",
+        "recordarContrasenaValorizacion": null
+    },
+    "inconsistenciasDetectadas": {
+        "serviciosIncorrectos": {
+            "declaracionesActividadTemporal": [
+                {"/site/firmadeclaracion/modalinfoinicial.xhtml": "firmaDeclaracion"},
+                {"/site/otrasdeclaraciones.xhtml": "declaracionesActividadTemporal"},
+                {"/site/firmadeclaracion/modalpresentardecl.xhtml": "declaracionesActividadTemporal"},
+                {"/site/firmadeclaracion/modalformulariocodivali.xhtml": "firmaDeclaracion"},
+                {"/site/encabezadoformulariodeclaracionv2.xhtml":"diligenciarDeclaraciones"},
+                {"/site/firmadeclaracion.xhtml": "firmaDeclaracion"},
+                {"/site/diligenciedeclaracionv2.xhtml": ["declaracionesActividadTemporal", "firmaDeclaracion", "diligenciarDeclaraciones"]},
+                {"/site/firmadeclaracion/contenidoenviacodigo.xhtml": "firmaDeclaracion"},
+                {"/site/formulariodeclaracionv2.xhtml": "declaracionesActividadTemporal"},
+                {"/site/firmadeclaracion/contenidoidfirma.xhtml": "firmaDeclaracion"},
+                {"/site/firmadeclaracion/modalfirmar.xhtml": "firmaDeclaracion"},
+                {"/site/detallefirmantes.xhtml": "firmaDeclaracion"}
+            ],
+            "cerificadoBomberos": [
+                {"/site/estadoSolicitudBomberos/modalOpcionesDePago.xhtml": "cerificadoBomberos"},
+                {"/site/estadoSolicitudBomberos/modalTablaSolicitudes.xhtml": "cerificadoBomberos"},
+                {"/site/estadoSolicitudBomberos/modalTablaSolicitudesBoton.xhtml": "cerificadoBomberos"},
+                {"/site/estadoSolicitudBomberos.xhtml": "cerificadoBomberos"},
+                {"/site/formularioBomberos/modalFormBomberos.xhtml": "cerificadoBomberos"},
+                {"/site/formularioBomberos/modalFormCamposFaltantes.xhtml": "cerificadoBomberos"},
+                {"/site/formularioBomberos.xhtml": "cerificadoBomberos"},
+                {"/site/opcionesModuloBomberos.xhtml": "cerificadoBomberos"},
+                {"/site/valiCertificadosBomberos/listaCertificadoBomberos.xhtml": "cerificadoBomberos"},
+                {"/site/valiCertificadosBomberos/modalCertificadosBomberosValido.xhtml": "cerificadoBomberos"},
+                {"/site/valiCertificadosBomberos.xhtml": "cerificadoBomberos"},
+                {"/site/valiCertificadosBomberos/formularioBomberos.xhtml": "cerificadoBomberos"},
+                {"/site/valiCertificadosBomberos.xhtml": "cerificadoBomberos"}
+            ],
+            "informacionTributaria": [{"/site/descargaArchivos.xhtml": "informacionTributaria"}],
+            "AcuerdoFirmaElectronica": [{
+                "/site/habilitafirmantes/cancelaproceso.xhtml": "gestionFirmantes",
+                "/site/gestionfirmantes/modalconfirmacion.xhtml": "gestionFirmantes",
+                "/site/habilitafirmantes/terminaproceso.xhtml": "gestionFirmantes",
+                "/site/habilitafirmantes/codigoseguridad.xhtml": "gestionFirmantes",
+                "/site/habilitafirmantes/terminoscondiciones.xhtml": "gestionFirmantes",
+                "/site/gestionfirmantes/formulariorepresentante.xhtml": "gestionFirmantes",
+                "/site/habilitafirmantes/advertencia.xhtml": "gestionFirmantes",
+                "/site/perfilfirmante.xhtml": "gestionFirmantes",
+                "/site/gestionfirmantes.xhtml": "gestionFirmantes",
+                "/site/habilitafirmantes/preguntasseguridad.xhtml": "gestionFirmantes",
+                "/site/habilitafirmantes.xhtml": "gestionFirmantes",
+                "/site/habilitafirmantes/modalerror.xhtml": "gestionFirmantes",
+                "/site/habilitafirmantes/bloqueo.xhtml": "gestionFirmantes",
+                "/site/habilitafirmantes/documentosanexos.xhtml": "gestionFirmantes",
+                "/site/habilitafirmantes/infofirmantes.xhtml": "gestionFirmantes"
+        }],
+            "diligenciarDeclaraciones": [
+                {"/site/diligenciamiento/actividadesEconomicas.xhtml": "diligenciarDeclaraciones"},
+                {"/site/diligenciamiento/presentaDeclaracionV2.xhtml": "diligenciarDeclaraciones"},
+                {"/site/diligenciamiento/renglonesDiliV2.xhtml": null},
+                {"/site/diligenciamiento/tablaRepresentantes.xhtml": "diligenciarDeclaraciones"}
+            ],
+            "gestionFacturas": [
+                {"/site/facturaDelineacion.xhtml": "gestionFacturas"},
+                {"/site/facturaExpres.xhtml": null},
+                {"/site/facturaExpresV2.xhtml": "gestionFacturas"},
+                {"/site/facturaExpresValorizacion.xhtml": null}
+            ],
+            "registroUsuario": [
+                {"/site/perfilUsuarioValorizacion.xhtml": "perfilUsuario"},
+                {"/site/usuarioFirmaElectronica.xhtml": "acuerdoFirmaElectronica"}
+            ]
+        },
+        "modulosIncorrectos": {}
+    }
+}

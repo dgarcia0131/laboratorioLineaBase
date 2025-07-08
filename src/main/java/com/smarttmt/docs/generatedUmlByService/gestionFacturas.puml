@@ -1,0 +1,12 @@
+@startuml
+
+package "gestionFacturas" {
+  [facturaDelineacion]
+  [facturaExpres]
+  [facturaExpresV2]
+  [facturaExpresValorizacion]
+}
+
+[facturaExpres] --> [facturaDelineacion]
+
+@enduml

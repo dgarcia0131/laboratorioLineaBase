@@ -9,6 +9,37 @@ import java.util.*;
 import java.util.regex.*;
 
 public class PrettyXmlToJson {
+
+    private static final Map<String, String> moduleToServiceMap = new HashMap<>();
+    private static final Map<String, String> keywordToServiceMap = new HashMap<>();
+
+    static {
+        moduleToServiceMap.put("diligenciamiento", "diligenciarDeclaraciones");
+        moduleToServiceMap.put("informacionTributaria", "InformacionTributaria");
+        moduleToServiceMap.put("facturaExpres", "gestionFacturas");
+        moduleToServiceMap.put("registroUsuario", "registroUsuario");
+        moduleToServiceMap.put("informacionExogena", "informacionExogena");
+        moduleToServiceMap.put("certificadoPazySalvo", "certificadoPazYsalvo");
+        moduleToServiceMap.put("rit", "rit");
+        moduleToServiceMap.put("acuerdoFirmaElectronica", "AcuerdoFirmaElectronica");
+        moduleToServiceMap.put("validacionPazySalvoV2", "validacionPazYsalvo");
+        moduleToServiceMap.put("valiCertificadosBomberos", "cerificadoBomberos");
+        moduleToServiceMap.put("otrasDeclaraciones", "declaracionesActividadTemporal");
+        moduleToServiceMap.put("delineacionUrbana", "delineacionUrbana");
+
+        keywordToServiceMap.put("factura", "gestionFacturas");
+        keywordToServiceMap.put("bomberos", "cerificadoBomberos");
+        keywordToServiceMap.put("usuario", "registroUsuario");
+        keywordToServiceMap.put("pazysalvo", "certificadoPazYsalvo");
+        keywordToServiceMap.put("firma", "AcuerdoFirmaElectronica");
+        keywordToServiceMap.put("diligencia", "diligenciarDeclaraciones");
+        keywordToServiceMap.put("exogena", "informacionExogena");
+        keywordToServiceMap.put("tribu", "InformacionTributaria");
+        keywordToServiceMap.put("rit", "rit");
+        keywordToServiceMap.put("delinea", "delineacionUrbana");
+        keywordToServiceMap.put("declaracion", "declaracionesActividadTemporal");
+    }
+
     public static void main(String[] args) throws Exception {
         String xmlPath = "C:/Users/dgarcia/Documents/proyectosLocales/laboratoriolineabase/src/main/java/com/smarttmt/docs/generatedPrettyFacesConfig/pretty-config.xml";
         String jsonPath = "C:/Users/dgarcia/Documents/proyectosLocales/laboratoriolineabase/src/main/java/com/smarttmt/docs/generatedPrettyFacesConfig/pretty-routes.json";
@@ -16,7 +47,6 @@ public class PrettyXmlToJson {
         System.out.println("Archivo JSON generado en: " + jsonPath);
     }
 
-    // Método reutilizable para ejecutar el script desde fuera del main
     public static void convertPrettyXmlToJson(String xmlPath, String jsonPath) throws Exception {
         List<JSONObject> routes = new ArrayList<>();
 
@@ -42,7 +72,27 @@ public class PrettyXmlToJson {
             route.put("pattern", patternValue);
             route.put("viewId", viewId);
 
-            // Identificar bean o bundle asociado
+            // Coincidencia por prefijo
+            boolean foundService = false;
+            for (String key : moduleToServiceMap.keySet()) {
+                if (module.startsWith(key)) {
+                    route.put("service", moduleToServiceMap.get(key));
+                    foundService = true;
+                    break;
+                }
+            }
+
+            // Coincidencia por palabra clave
+            if (!foundService) {
+                String combined = module.toLowerCase() + " " + viewId.toLowerCase();
+                for (String keyword : keywordToServiceMap.keySet()) {
+                    if (combined.contains(keyword)) {
+                        route.put("service", keywordToServiceMap.get(keyword));
+                        break;
+                    }
+                }
+            }
+
             if (patternValue.contains("#{")) {
                 BeanInfo beanInfo = extraerBeanMetodoParams(patternValue);
                 if (beanInfo != null) {
@@ -82,7 +132,6 @@ public class PrettyXmlToJson {
     }
 
     private static BeanInfo extraerBeanMetodoParams(String pattern) {
-        // Método con parámetros: #{bean.metodo(param1, param2)}
         Pattern p = Pattern.compile("#\\{([a-zA-Z0-9_]+)\\.([a-zA-Z0-9_]+)\\s*\\(([^}]*)\\)?\\}");
         Matcher m = p.matcher(pattern);
         if (m.find()) {
@@ -101,7 +150,6 @@ public class PrettyXmlToJson {
             }
             return new BeanInfo(bean, method, params);
         }
-        // Método sin parámetros: #{bean.metodo}
         Pattern p2 = Pattern.compile("#\\{([a-zA-Z0-9_]+)\\.([a-zA-Z0-9_]+)\\}");
         Matcher m2 = p2.matcher(pattern);
         if (m2.find()) {
@@ -109,7 +157,6 @@ public class PrettyXmlToJson {
             String method = m2.group(2);
             return new BeanInfo(bean, method, new ArrayList<>());
         }
-        // Expresión booleana o con operador: #{ !bean.propiedad }
         Pattern p3 = Pattern.compile("#\\{\\s*!?\\s*([a-zA-Z0-9_]+)\\.([a-zA-Z0-9_]+)\\s*\\}");
         Matcher m3 = p3.matcher(pattern);
         if (m3.find()) {

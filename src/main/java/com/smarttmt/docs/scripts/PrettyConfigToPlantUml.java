@@ -7,19 +7,33 @@ import java.io.File;
 import java.io.FileWriter;
 import javax.xml.xpath.*;
 
+/**
+ * Utilidad para generar un diagrama PlantUML a partir de un archivo pretty-config.xml.
+ * Analiza los mapeos de URL y genera nodos y relaciones según reglas específicas.
+ */
 public class PrettyConfigToPlantUml {
 
-    // Mueve la clase Ruta aquí
+    /**
+     * Clase interna para representar una ruta (pattern y viewId).
+     */
     static class Ruta {
-        String pattern;
-        String viewId;
+        String pattern; // Patrón de la URL
+        String viewId;  // Vista asociada
         Ruta(String pattern, String viewId) {
             this.pattern = pattern;
             this.viewId = viewId;
         }
     }
 
+    /**
+     * Genera un archivo PlantUML a partir de un archivo pretty-config.xml.
+     *
+     * @param prettyConfigPath Ruta al archivo pretty-config.xml.
+     * @param outputPath Ruta del archivo .puml de salida.
+     * @throws Exception Si ocurre un error de lectura/escritura o parseo XML.
+     */
     public void generatePlantUmlFromPrettyConfig(String prettyConfigPath, String outputPath) throws Exception {
+        // Archivo XML de entrada
         File xmlFile = new File(prettyConfigPath);
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(true);
@@ -27,8 +41,10 @@ public class PrettyConfigToPlantUml {
         Document document = builder.parse(xmlFile);
         document.getDocumentElement().normalize();
 
+        // Namespace del documento XML
         String ns = document.getDocumentElement().getNamespaceURI();
 
+        // Acumulador para el contenido PlantUML generado
         StringBuilder plantUml = new StringBuilder();
         plantUml.append("@startuml\n");
         plantUml.append("top to bottom direction\n\n");
@@ -37,12 +53,13 @@ public class PrettyConfigToPlantUml {
         XPathFactory xPathFactory = XPathFactory.newInstance();
         XPath xPath = xPathFactory.newXPath();
 
+        // Expresión XPath para obtener los url-mapping
         String urlMappingExpr = (ns != null)
             ? "//*[local-name()='url-mapping']"
             : "//url-mapping";
         NodeList urlMappings = (NodeList) xPath.evaluate(urlMappingExpr, document, XPathConstants.NODESET);
 
-        // Mapear patrones y vistas
+        // Lista de rutas encontradas en el archivo XML
         java.util.List<Ruta> rutas = new java.util.ArrayList<>();
         for (int i = 0; i < urlMappings.getLength(); i++) {
             Element element = (Element) urlMappings.item(i);
@@ -64,7 +81,7 @@ public class PrettyConfigToPlantUml {
             }
         }
 
-        // Detectar inicio y login
+        // Detectar la ruta de inicio y login
         Ruta inicio = rutas.isEmpty() ? new Ruta("/", "/index.html") : rutas.get(0);
         Ruta login = null;
         for (Ruta r : rutas) {
@@ -74,6 +91,7 @@ public class PrettyConfigToPlantUml {
             }
         }
 
+        // Nodo de inicio
         String inicioNode = "\"Inicio (" + inicio.pattern + ") => (" + inicio.viewId + ")\"";
         plantUml.append("(*) --> ").append(inicioNode).append("\n");
 
@@ -99,7 +117,7 @@ public class PrettyConfigToPlantUml {
             }
         }
 
-        // Relación de regreso al inicio desde login (opcional, como en tu ejemplo)
+        // Relación de regreso al inicio desde login (opcional)
         if (login != null) {
             String loginNode = "\"" + login.pattern + " => (" + login.viewId + ")\"";
             plantUml.append(loginNode).append(" --> ").append(inicioNode).append("\n");
@@ -107,6 +125,7 @@ public class PrettyConfigToPlantUml {
 
         plantUml.append("\n@enduml");
 
+        // Escribir el archivo PlantUML de salida
         try (FileWriter writer = new FileWriter(outputPath)) {
             writer.write(plantUml.toString());
         }

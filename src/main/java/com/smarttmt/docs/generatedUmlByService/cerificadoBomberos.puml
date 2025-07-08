@@ -1,0 +1,24 @@
+@startuml
+
+package "cerificadoBomberos" {
+  [estadoSolicitudBomberos]
+  [formularioBomberos]
+  [listaCertificadoBomberos]
+  [modalCertificadosBomberosValido]
+  [modalFormBomberos]
+  [modalFormCamposFaltantes]
+  [modalOpcionesDePago]
+  [modalTablaSolicitudes]
+  [modalTablaSolicitudesBoton]
+  [opcionesModuloBomberos]
+  [valiCertificadosBomberos]
+}
+
+[modalTablaSolicitudesBoton] --> [modalTablaSolicitudes]
+[modalFormBomberos] --> [modalTablaSolicitudes]
+[modalFormCamposFaltantes] --> [modalTablaSolicitudes]
+[formularioBomberos] --> [estadoSolicitudBomberos]
+[opcionesModuloBomberos] --> [estadoSolicitudBomberos]
+[valiCertificadosBomberos] --> [estadoSolicitudBomberos]
+
+@enduml

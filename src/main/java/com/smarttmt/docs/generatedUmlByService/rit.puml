@@ -1,0 +1,38 @@
+@startuml
+
+package "rit" {
+  [actividadesEconomicasRit]
+  [actividadesEstablecimiento]
+  [anexos]
+  [cerrarEstablecimientos]
+  [consultarRit]
+  [establecimientos]
+  [informacionContribuyente]
+  [informacionContribuyenteComercial]
+  [loginRitApertura]
+  [loginRitNovedad]
+  [registrarEstablecimiento]
+  [representantes]
+  [responsabilidadTributaria]
+  [rit]
+  [tablaRitGuardado]
+  [terminosCondiciones]
+  [ubicacionContacto]
+}
+
+[actividadesEstablecimiento] --> [actividadesEconomicasRit]
+[anexos] --> [actividadesEconomicasRit]
+[cerrarEstablecimientos] --> [actividadesEconomicasRit]
+[establecimientos] --> [actividadesEconomicasRit]
+[informacionContribuyente] --> [actividadesEconomicasRit]
+[informacionContribuyenteComercial] --> [actividadesEconomicasRit]
+[loginRitApertura] --> [consultarRit]
+[loginRitNovedad] --> [consultarRit]
+[registrarEstablecimiento] --> [actividadesEconomicasRit]
+[representantes] --> [actividadesEconomicasRit]
+[responsabilidadTributaria] --> [actividadesEconomicasRit]
+[tablaRitGuardado] --> [actividadesEconomicasRit]
+[ubicacionContacto] --> [actividadesEconomicasRit]
+[rit] --> [consultarRit]
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+
+package "certificadoPazYsalvo" {
+  [certificadoPazySalvo]
+  [certificadoPazySalvoValorizacion]
+}
+
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+
+package "registroUsuario_" {
+  [preguntasSeguridadRegistroUsuario]
+  [registroUsuarioBienvenido]
+  [registroUsuarioExitoso]
+  [registroUsuario]
+  [registroUsuarioValidaDocumento]
+}
+
+[registroUsuarioValidaDocumento] --> [registroUsuario] :"validar Documento"
+[registroUsuario] --> [preguntasSeguridadRegistroUsuario] :"registrar Usuario"
+[preguntasSeguridadRegistroUsuario] --> [registroUsuarioBienvenido] :"preguntas Seguridad"
+[registroUsuarioBienvenido] --> [registroUsuarioExitoso] :"bienvenido Usuario"
+
+@enduml

@@ -1,15 +1,9 @@
-@startuml
-skinparam linetype ortho
+@startuml registroUsuario
+package registroUsuario {
+  component registroUsuarioExitosoV2 as [registroUsuarioExitosoV2.xhtml]
+  component registroUsuarioValidaDocumentoV2 as [registroUsuarioValidaDocumentoV2.xhtml]
 
-package "moduloInicio" {
-  [Inicio] as home
+  [registroUsuarioExitosoV2.xhtml] --> registroUsuarioBean : confirmar()
+  [registroUsuarioValidaDocumentoV2.xhtml] --> registroUsuarioBean : validarDocumento()
 }
-
-package "moduloRit" {
-  [Actividades Económicas] as actividades
-  [Establecimiento dinámico] as est_din
-}
-
-home --> actividades : ir a RIT
-actividades --> est_din : seleccionar establecimiento dinámico
 @enduml

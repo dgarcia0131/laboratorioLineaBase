@@ -1,0 +1,131 @@
+@startuml
+
+package "home_" {
+  [home]
+}
+
+package "login" {
+  [loginV2]
+}
+
+package "diligenciarDeclaraciones" {
+  [diligencieDeclaracionV2]
+  [formularioDeclaracionV2]
+}
+
+package "InformacionTributaria" {
+  [descargaArchivos]
+}
+
+package "gestionFacturas" {
+  [facturaExpresV2]
+  [formularioPago]
+  [confirmarPago]
+}
+
+package "registroUsuario" {
+  [registroUsuarioValidaDocumentoV2]
+  [registroUsuarioV2]
+  [preguntasSeguridadRegistroUsuarioV2]
+  [registroUsuarioExitosoV2]
+  [registroUsuarioBienvenidoV2]
+}
+
+package "informacionExogena_" {
+  [informacionExogena]
+  [tabDescargaDiligencia]
+  [tabCargar]
+  [validaCorrige]
+  [tabConsultaHistorica]
+}
+
+package "certificadoPazYsalvo" {
+  [certificadoPazySalvo]
+}
+
+package "rit_" {
+  [loginRitApertura]
+  [rit]
+  [informacionContribuyente]
+  [ubicacionContacto]
+  [representantes]
+  [anexos]
+}
+
+package "AcuerdoFirmaElectronica" {
+  [acuerdoFirmaElectronica]
+  [usuarioFirmaElectronica]
+  [firmaDeclaracion]
+  [notificaciones]
+  [firmaRit]
+}
+
+package "validacionPazYsalvo" {
+  [validacionPazySalvoV2]
+  [modalCertificado]
+}
+
+package "cerificadoBomberos" {
+  [opcionesModuloBomberos]
+  [estadoSolicitudBomberos]
+  [modalTablaSolicitudes]
+  [modalTablaSolicitudesBoton]
+  [formularioBomberos]
+  [valiCertificadosBomberos]
+  [modalFormCamposFaltantes]
+}
+
+package "declaracionesActividadTemporal" {
+  [otrasDeclaraciones]
+}
+
+package "delineacionUrbana" {
+  [facturaDelineacion]
+}
+
+
+home --> [loginV2] :"Iniciar Sesión"
+home --> [otrasDeclaraciones] :"Diligenciar Otras Declaraciones"
+home --> [facturaDelineacion] :"Consultar Factura Delineación Urbana"
+home --> [opcionesModuloBomberos] :"Inicio Servicio Bomberos"
+opcionesModuloBomberos --> [estadoSolicitudBomberos] :"Estado Solicitud Bomberos"
+opcionesModuloBomberos --> [formularioBomberos] :"Diligenciar Formulario Bomberos"
+opcionesModuloBomberos --> [valiCertificadosBomberos] :"Validar Certificado Bomberos"
+valiCertificadosBomberos --> [modalTablaSolicitudesBoton] :"Mostrar alertas en caso de errores"
+formularioBomberos --> modalFormCamposFaltantes :"Muestra alerta si hay Campos Faltantes"
+modalFormCamposFaltantes --> [modalTablaSolicitudes] :"Consultar Solicitudes"
+estadoSolicitudBomberos --> [modalTablaSolicitudesBoton] :"Mostrar alertas en caso de errores"
+modalTablaSolicitudesBoton --> [modalTablaSolicitudes] :"Consultar Solicitudes"
+home --> [validacionPazySalvoV2] :"Validación Paz y Salvo"
+validacionPazySalvoV2 --> [modalCertificado] :"Consultar Certificado"
+loginV2 --> [acuerdoFirmaElectronica] :"Ir a servicio de Acuerdo Firma Electrónica"
+acuerdoFirmaElectronica --> [usuarioFirmaElectronica] :"Acciones Usuario Firma Electrónica"
+usuarioFirmaElectronica --> [firmaDeclaracion] :"Firmar Declaración"
+usuarioFirmaElectronica --> [notificaciones] :"Notificaciones"
+usuarioFirmaElectronica --> [firmaRit] :"Firmar RIT"
+home --> [loginRitApertura] :"RIT Apertura"
+loginRitApertura --> [rit] :" diligenciar formulario RIT"
+rit --> [informacionContribuyente] :"Información del Contribuyente"
+informacionContribuyente --> [ubicacionContacto] :"Ubicación y Contacto"
+ubicacionContacto --> [representantes] :"Representantes"
+representantes --> [anexos] :"Anexos"
+home --> [certificadoPazySalvo] :"Consultar Certificado Paz y Salvo"
+loginV2 --> [informacionExogena] :"Información Exógena"
+informacionExogena <--> [tabDescargaDiligencia] :"Descargar Plantilla"
+informacionExogena <--> [tabCargar] :"Cargar Información"
+informacionExogena <--> [validaCorrige] :"Validar y Corregir"
+informacionExogena <--> [tabConsultaHistorica] :"Consultar Histórica"
+home --> descargaArchivos :"Información Tributaria"
+home --> [facturaExpresV2] :"Consular Facturas"
+home --> [registroUsuarioValidaDocumentoV2] :"Validar informacion de Usuario"
+registroUsuarioValidaDocumentoV2 --> [registroUsuarioV2] :"Registrar Usuario"
+registroUsuarioV2 --> [preguntasSeguridadRegistroUsuarioV2] :"Preguntas de Seguridad"
+preguntasSeguridadRegistroUsuarioV2 --> [registroUsuarioExitosoV2] :"Registro Exitoso"
+registroUsuarioExitosoV2 --> [registroUsuarioBienvenidoV2] :"Bienvenido"
+facturaExpresV2 --> [formularioPago] :"Pagar Factura"
+formularioPago --> [confirmarPago] :"Confirmar Pago"
+loginV2 --> [diligencieDeclaracionV2] :"Ingreasar a Diligenciar Declaración"
+diligencieDeclaracionV2 --> [formularioDeclaracionV2] :"Diligenciar Declaración"
+formularioDeclaracionV2 --> diligencieDeclaracionV2 :"Visualizar Declaración"
+
+@enduml

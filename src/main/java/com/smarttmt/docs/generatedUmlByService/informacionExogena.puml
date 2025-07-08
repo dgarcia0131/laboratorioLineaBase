@@ -1,0 +1,32 @@
+@startuml
+
+package "informacionExogena" {
+  [detalleFirmantes]
+  [informacionExogena]
+  [informacionExogenaTemp]
+  [modalArchivoMost]
+  [modalArchivoMostac]
+  [modalBorrar]
+  [modalConfirm1]
+  [modalConfirm2]
+  [modalConfirm3]
+  [modalDatatableArchivos]
+  [modalDatatableNota]
+  [modalDatatableNota2]
+  [modalDetalleFirmaExog]
+  [modalErrorProces]
+  [modalErrores]
+  [modalFileUpload]
+  [modalPresentar]
+  [modalPresentarExog]
+  [modalProcesoEx]
+  [modalProcesoFinalizado]
+  [tabCargar]
+  [tabConsultaHistorica]
+  [tabDescargaDiligencia]
+  [tabValidaCorrige]
+}
+
+[informacionExogenaTemp] --> [informacionExogena]
+
+@enduml

@@ -1,0 +1,28 @@
+@startuml
+
+package "AcuerdoFirmaElectronica" {
+  [acuerdoFirmaElectronica]
+  [advertencia]
+  [bloqueo]
+  [cancelaproceso]
+  [codigoSeguridad]
+  [descargaArchivo]
+  [detalleFirmantes]
+  [documentosAnexos]
+  [formularioRepresentante]
+  [gestionFirmantes]
+  [habilitaFirmantes]
+  [infoFirmantes]
+  [informacionTercero]
+  [modalConfirmacion]
+  [modalError]
+  [perfilFirmante]
+  [preguntasSeguridad]
+  [terminaproceso]
+  [terminosCondiciones]
+}
+
+[gestionFirmantes] --> [acuerdoFirmaElectronica]
+[perfilFirmante] --> [acuerdoFirmaElectronica]
+
+@enduml

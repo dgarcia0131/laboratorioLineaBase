@@ -1,0 +1,11 @@
+@startuml
+
+package "validacionPazYsalvo" {
+  [modalCertificado]
+  [modalCertificadoInvias]
+  [modalQr]
+  [validacionPazySalvoV2]
+}
+
+
+@enduml

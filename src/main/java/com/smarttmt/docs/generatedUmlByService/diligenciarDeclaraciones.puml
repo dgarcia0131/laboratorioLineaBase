@@ -1,0 +1,14 @@
+@startuml
+
+package "diligenciarDeclaraciones" {
+  [actividadesEconomicas]
+  [presentaDeclaracionV2]
+  [renglonesDiliV2]
+  [tablaRepresentantes]
+}
+
+[presentaDeclaracionV2] --> [actividadesEconomicas]
+[renglonesDiliV2] --> [actividadesEconomicas]
+[tablaRepresentantes] --> [actividadesEconomicas]
+
+@enduml

@@ -1,0 +1,566 @@
+{
+    "declaracionesActividadTemporal": [
+        {
+            "from": "diligencieDeclaracionV2",
+            "to": "encabezadoFormularioDeclaracionV2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "encabezadoFormularioDeclaracionV2",
+            "to": "contenidoEnviaCodigo",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "contenidoEnviaCodigo",
+            "to": "contenidoIdFirma",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "contenidoIdFirma",
+            "to": "modalFirmar",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalFirmar",
+            "to": "modalFormularioCodivali",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalFormularioCodivali",
+            "to": "modalInfoInicial",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalInfoInicial",
+            "to": "modalPresentarDecl",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalPresentarDecl",
+            "to": "firmaDeclaracion",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "firmaDeclaracion",
+            "to": "formularioDeclaracionV2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "formularioDeclaracionV2",
+            "to": "otrasDeclaraciones",
+            "label": "relacion-generada"
+        }
+    ],
+    "delineacionUrbana": [],
+    "perfilUsuario": [],
+    "validacionPazYsalvo": [
+        {
+            "from": "modalCertificado",
+            "to": "modalCertificadoInvias",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalCertificadoInvias",
+            "to": "modalQr",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalQr",
+            "to": "validacionPazySalvoV2",
+            "label": "relacion-generada"
+        }
+    ],
+    "estadoCuenta": [],
+    "diligenciarDeclaraciones": [
+        {
+            "from": "actividadesEconomicas",
+            "to": "presentaDeclaracionV2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "presentaDeclaracionV2",
+            "to": "renglonesDiliV2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "renglonesDiliV2",
+            "to": "tablaRepresentantes",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "tablaRepresentantes",
+            "to": "tablaListadoDeolestaV2",
+            "label": "relacion-generada"
+        }
+    ],
+    "gestionFacturas": [
+        {
+            "from": "facturaDelineacion",
+            "to": "facturaExpres",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "facturaExpres",
+            "to": "facturaExpresV2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "facturaExpresV2",
+            "to": "facturaExpresValorizacion",
+            "label": "relacion-generada"
+        }
+    ],
+    "registroUsuario": [
+        {
+            "from": "perfilUsuarioValorizacion",
+            "to": "preguntasSeguridadRegistroUsuarioV2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "preguntasSeguridadRegistroUsuarioV2",
+            "to": "registroUsuarioBienvenidoV2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "registroUsuarioBienvenidoV2",
+            "to": "registroUsuarioExitosoV2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "registroUsuarioExitosoV2",
+            "to": "registroUsuarioV2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "registroUsuarioV2",
+            "to": "registroUsuarioValidaDocumentoV2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "registroUsuarioValidaDocumentoV2",
+            "to": "usuarioFirmaElectronica",
+            "label": "relacion-generada"
+        }
+    ],
+    "gestionPago": [
+        {
+            "from": "confirmarPago",
+            "to": "formularioPago",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "formularioPago",
+            "to": "resumenPago",
+            "label": "relacion-generada"
+        }
+    ],
+    "cerificadoBomberos": [
+        {
+            "from": "modalOpcionesDePago",
+            "to": "modalTablaSolicitudes",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalTablaSolicitudes",
+            "to": "modalTablaSolicitudesBoton",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalTablaSolicitudesBoton",
+            "to": "estadoSolicitudBomberos",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "estadoSolicitudBomberos",
+            "to": "modalFormBomberos",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalFormBomberos",
+            "to": "modalFormCamposFaltantes",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalFormCamposFaltantes",
+            "to": "formularioBomberos",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "formularioBomberos",
+            "to": "opcionesModuloBomberos",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "opcionesModuloBomberos",
+            "to": "tablaSolicitudes",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "tablaSolicitudes",
+            "to": "listaCertificadoBomberos",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "listaCertificadoBomberos",
+            "to": "modalCertificadosBomberosValido",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalCertificadosBomberosValido",
+            "to": "valiCertificadosBomberos",
+            "label": "relacion-generada"
+        }
+    ],
+    "componentesGlobales": [
+        {
+            "from": "home",
+            "to": "loadPage",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "loadPage",
+            "to": "loginV2",
+            "label": "relacion-generada"
+        }
+    ],
+    "informacionTributaria": [],
+    "certificadoPazYsalvo": [
+        {
+            "from": "certificadoPazySalvo",
+            "to": "certificadoPazySalvoValorizacion",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "certificadoPazySalvoValorizacion",
+            "to": "listaCertificado",
+            "label": "relacion-generada"
+        }
+    ],
+    "AcuerdoFirmaElectronica": [
+        {
+            "from": "advertencia",
+            "to": "bloqueo",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "bloqueo",
+            "to": "codigoSeguridad",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "codigoSeguridad",
+            "to": "descargaArchivo",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "descargaArchivo",
+            "to": "informacionTercero",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "informacionTercero",
+            "to": "modalError",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalError",
+            "to": "terminosCondiciones",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "terminosCondiciones",
+            "to": "acuerdoFirmaElectronica",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "acuerdoFirmaElectronica",
+            "to": "detalleFirmantes",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "detalleFirmantes",
+            "to": "formularioRepresentante",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "formularioRepresentante",
+            "to": "modalConfirmacion",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalConfirmacion",
+            "to": "gestionFirmantes",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "gestionFirmantes",
+            "to": "advertencia",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "advertencia",
+            "to": "bloqueo",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "bloqueo",
+            "to": "cancelaproceso",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "cancelaproceso",
+            "to": "codigoSeguridad",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "codigoSeguridad",
+            "to": "documentosAnexos",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "documentosAnexos",
+            "to": "infoFirmantes",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "infoFirmantes",
+            "to": "modalError",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalError",
+            "to": "preguntasSeguridad",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "preguntasSeguridad",
+            "to": "terminaproceso",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "terminaproceso",
+            "to": "terminosCondiciones",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "terminosCondiciones",
+            "to": "habilitaFirmantes",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "habilitaFirmantes",
+            "to": "notificaciones",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "notificaciones",
+            "to": "perfilFirmante",
+            "label": "relacion-generada"
+        }
+    ],
+    "acuerdoPago": [],
+    "rit": [
+        {
+            "from": "actividadesEconomicasRit",
+            "to": "actividadesEstablecimiento",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "actividadesEstablecimiento",
+            "to": "anexos",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "anexos",
+            "to": "cerrarEstablecimientos",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "cerrarEstablecimientos",
+            "to": "consultarRit",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "consultarRit",
+            "to": "establecimientos",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "establecimientos",
+            "to": "informacionContribuyente",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "informacionContribuyente",
+            "to": "informacionContribuyenteComercial",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "informacionContribuyenteComercial",
+            "to": "loginRitApertura",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "loginRitApertura",
+            "to": "loginRitNovedad",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "loginRitNovedad",
+            "to": "registrarEstablecimiento",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "registrarEstablecimiento",
+            "to": "representantes",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "representantes",
+            "to": "responsabilidadTributaria",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "responsabilidadTributaria",
+            "to": "tablaRitGuardado",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "tablaRitGuardado",
+            "to": "terminosCondiciones",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "terminosCondiciones",
+            "to": "ubicacionContacto",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "ubicacionContacto",
+            "to": "rit",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "rit",
+            "to": "tablaFormularioGuardadoV2",
+            "label": "relacion-generada"
+        }
+    ],
+    "informacionExogena": [
+        {
+            "from": "detalleFirmantes",
+            "to": "modalArchivoMost",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalArchivoMost",
+            "to": "modalArchivoMostac",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalArchivoMostac",
+            "to": "modalBorrar",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalBorrar",
+            "to": "modalConfirm1",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalConfirm1",
+            "to": "modalConfirm2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalConfirm2",
+            "to": "modalConfirm3",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalConfirm3",
+            "to": "modalDatatableArchivos",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalDatatableArchivos",
+            "to": "modalDatatableNota",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalDatatableNota",
+            "to": "modalDatatableNota2",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalDatatableNota2",
+            "to": "modalDetalleFirmaExog",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalDetalleFirmaExog",
+            "to": "modalErrores",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalErrores",
+            "to": "modalErrorProces",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalErrorProces",
+            "to": "modalFileUpload",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalFileUpload",
+            "to": "modalPresentar",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalPresentar",
+            "to": "modalPresentarExog",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalPresentarExog",
+            "to": "modalProcesoEx",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalProcesoEx",
+            "to": "modalProcesoFinalizado",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "modalProcesoFinalizado",
+            "to": "tabCargar",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "tabCargar",
+            "to": "tabConsultaHistorica",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "tabConsultaHistorica",
+            "to": "tabDescargaDiligencia",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "tabDescargaDiligencia",
+            "to": "tabValidaCorrige",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "tabValidaCorrige",
+            "to": "informacionExogena",
+            "label": "relacion-generada"
+        },
+        {
+            "from": "informacionExogena",
+            "to": "informacionExogenaTemp",
+            "label": "relacion-generada"
+        }
+    ]
+}
